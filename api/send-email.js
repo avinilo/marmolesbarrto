@@ -11,6 +11,11 @@ function parseBody(req) {
   });
 }
 
+async function getRequestBody(req) {
+  if (req.body && typeof req.body === 'object') return req.body;
+  return await parseBody(req);
+}
+
 function escapeHtml(str) {
   return String(str || '').replace(/[&<>"']/g, (c) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -25,7 +30,7 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const body = await parseBody(req);
+  const body = await getRequestBody(req);
   const name = (body.name || '').trim();
   const phone = (body.phone || '').trim();
   const projectType = body.projectType || '';
