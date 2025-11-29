@@ -1,19 +1,18 @@
 
-
 Diagnostica problemas de rendimiento
 70
 Rendimiento
 96
 Accesibilidad
-96
+100
 Prácticas recomendadas
 100
 SEO
 70
 FCP
-+2
++4
 LCP
-+7
++4
 TBT
 +30
 CLS
@@ -30,16 +29,16 @@ Final Screenshot
 Métricas
 Ampliar vista
 First Contentful Paint
-4,5 s
+3,2 s
 Renderizado del mayor elemento con contenido
-5,0 s
+5,8 s
 Total Blocking Time
 0 ms
 Cambios de diseño acumulados
-0.011
+0
 Speed Index
 4,5 s
-Captured at 29 nov 2025, 15:31 CET
+Captured at 29 nov 2025, 15:38 CET
 Moto G Power emulado with Lighthouse 13.0.1
 Sesión de una sola página
 Carga inicial de la página
@@ -63,52 +62,44 @@ FCP
 LCP
 
 TBT
-
-CLS
 Estadísticas
-Solicitudes que bloquean el renderizado Ahorro estimado de 1710 ms
+Solicitudes que bloquean el renderizado Ahorro estimado de 2920 ms
 Las solicitudes están bloqueando el renderizado inicial de la página, lo que puede retrasar el LCP. Si se posponen o se insertan, estas solicitudes de red pueden salir de la ruta crítica.LCPFCPSin puntuar
 URL
 Tamaño de la transferencia
 Duración
 tailwindcss.com
-124,1 KiB	780 ms
+124,1 KiB	770 ms
 /3.4.17(cdn.tailwindcss.com)
 124,1 KiB
-780 ms
+770 ms
 Google Fonts cdn 
 1,4 KiB	750 ms
 /css2?family=…(fonts.googleapis.com)
 1,4 KiB
 750 ms
-Visualización de fuentes Ahorro estimado de 30 ms
-Te recomendamos asignar el valor swap o optional a font-display para asegurarte de que el texto se vea de forma coherente. swap se puede optimizar aún más para mitigar los cambios de diseño con anulaciones de métricas de fuente.FCPSin puntuar
-URL
-Ahorro estimado
-Cloudflare CDN cdn 
-…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
-30 ms
-…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
-30 ms
 Árbol de dependencia de red
 Evita encadenar solicitudes críticas reduciendo la longitud de las cadenas, disminuyendo el tamaño de los recursos o posponiendo la descarga de recursos innecesarios para mejorar la carga de la página.LCPSin puntuar
-Latencia de ruta crítica máxima: 495 ms
+Latencia de ruta crítica máxima: 831 ms
 Navegación inicial
-https://marmolesbarreto.com - 70 ms, 11,97 KiB
-/3.4.17(cdn.tailwindcss.com) - 142 ms, 124,10 KiB
-/3.4.17(cdn.tailwindcss.com) - 142 ms, 124,10 KiB
-/css2?family=…(fonts.googleapis.com) - 89 ms, 1,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 494 ms, 14,38 KiB
-…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 495 ms, 14,44 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 494 ms, 14,63 KiB
-…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 494 ms, 22,20 KiB
-…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 495 ms, 38,35 KiB
+https://marmolesbarreto.com - 116 ms, 13,26 KiB
+/3.4.17(cdn.tailwindcss.com) - 162 ms, 124,08 KiB
+/3.4.17(cdn.tailwindcss.com) - 162 ms, 124,08 KiB
+/css2?family=…(fonts.googleapis.com) - 123 ms, 1,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 830 ms, 14,38 KiB
+…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 830 ms, 14,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 829 ms, 14,63 KiB
+…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 831 ms, 22,20 KiB
+…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 831 ms, 38,35 KiB
 Orígenes preconectados
 Las sugerencias para establecer conexión previamente ayudan al navegador a establecer una conexión antes de que se cargue la página, lo que ahorra tiempo al hacer la primera solicitud a ese origen. A continuación se indican los orígenes con los que la página ha establecido conexión previamente.
 No hay orígenes con los que se haya establecido conexión previamente
 Candidatos para establecer conexión previamente
 Añade sugerencias para establecer conexión previamente con tus orígenes más importantes, pero intenta usar 4 como máximo.
-No hay más orígenes que sean buenos candidatos para establecer conexión previamente
+Origen
+Ahorro estimado de LCP
+https://www.singularmarket.com
+480 ms
 Mejorar la entrega de imágenes Ahorro estimado de 180 KiB
 Si se reduce el tiempo de descarga de las imágenes, se puede mejorar el tiempo de carga percibido de la página y el LCP. Más información sobre la optimización del tamaño de las imágenesLCPFCPSin puntuar
 URL
@@ -134,15 +125,6 @@ Máquina de chorreo de arena
 63,0 KiB
 Este archivo de imagen es más grande de lo necesario (1000x600) para las dimensiones mostradas (364x218). Usa imágenes adaptables para reducir el tamaño de descarga de la imagen.
 63,0 KiB
-Causantes de los cambios de diseño
-Los cambios de diseño se producen cuando los elementos se mueven sin que el usuario interactúe con ellos. Investiga las causas de los cambios de diseño, como la adición o eliminación de elementos o el cambio de fuentes a medida que se carga la página.CLSSin puntuar
-Elemento
-Puntuación del cambio de diseño
-Total
-0,011
-Transformamos la piedra en Elegancia Eterna
-<h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
-0,011
 Desglose de LCP
 Cada subparte tiene estrategias de mejora específicas. Lo ideal es que la mayor parte del tiempo de LCP se dedique a cargar los recursos, no a los retrasos.LCPSin puntuar
 Subparte
@@ -150,7 +132,7 @@ Duración
 Time to First Byte
 0 ms
 Retraso de renderizado de elementos
-1260 ms
+2260 ms
 Transformamos la piedra en Elegancia Eterna
 <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
 Terceros
@@ -159,10 +141,10 @@ Tercero
 Tamaño de la transferencia
 Tiempo del hilo principal
 tailwindcss.com
-124 KiB	72 ms
+124 KiB	130 ms
 https://cdn.tailwindcss.com
 0 KiB
-72 ms
+130 ms
 /3.4.17(cdn.tailwindcss.com)
 124 KiB
 0 ms
@@ -186,17 +168,6 @@ Google Fonts cdn
 /css2?family=…(fonts.googleapis.com)
 1 KiB
 0 ms
-Cloudflare CDN cdn 
-244 KiB	0 ms
-…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
-125 KiB
-0 ms
-…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
-103 KiB
-0 ms
-…css/all.min.css(cdnjs.cloudflare.com)
-16 KiB
-0 ms
 domfesasl.com
 73 KiB	0 ms
 …12/chorreado-con-arena.jpg(domfesasl.com)
@@ -209,16 +180,6 @@ singularmarket.com
 0 ms
 Estas estadísticas también están disponibles en el panel Rendimiento de Chrome DevTools. Graba una traza para ver información más detallada.
 Diagnósticos
-Reduce el contenido CSS que no se use Ahorro estimado de 15 KiB
-Reduce las reglas que no se usen de las hojas de estilo y retrasa las reglas CSS que no se utilicen para el contenido de la parte visible a primera vista. Así, se reducirán los bytes consumidos por la actividad de red. Consulta cómo reducir el contenido de CSS que no se useLCPFCPSin puntuar
-URL
-Tamaño de la transferencia
-Ahorro estimado
-Cloudflare CDN cdn 
-14,8 KiB	14,7 KiB
-…css/all.min.css(cdnjs.cloudflare.com)
-14,8 KiB
-14,7 KiB
 Reduce el contenido JavaScript que no se use Ahorro estimado de 38 KiB
 Reduce el contenido JavaScript que no se use y retrasa la carga de secuencias de comandos hasta que se necesiten. Así, se reducirán los bytes consumidos por la actividad de red. Consulta cómo reducir el contenido de JavaScript que no se useLCPFCPSin puntuar
 URL
@@ -235,20 +196,20 @@ URL
 Hora de inicio
 Duración
 marmolesbarreto.com Propio
-381 ms
+595 ms
 https://marmolesbarreto.com
-1614 ms
-317 ms
+1685 ms
+375 ms
 https://marmolesbarreto.com
-1931 ms
-64 ms
+2060 ms
+220 ms
 tailwindcss.com
-67 ms
+130 ms
 https://cdn.tailwindcss.com
-1547 ms
-67 ms
+1555 ms
+130 ms
 Consulta más información sobre el rendimiento de tu aplicación. Estos datos no afectan directamente a la puntuación del rendimiento.
-Auditorías aprobadas (17)
+Auditorías aprobadas (20)
 Mostrar
 96
 Accesibilidad
@@ -288,3 +249,4 @@ section#testimonios > div.container > div.text-center > span.text-gold-accent
 body.font-sans > section#testimonios
 <section id="testimonios" class="py-16 bg-white cv-auto">
 A continuación se indican consejos para facilitar la lectura del contenido.
+Prácticas recomendadas

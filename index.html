@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://domfesasl.com" crossorigin>
     <link rel="preconnect" href="https://airpress.es" crossorigin>
     <link rel="preload" as="image" href="/hero.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/public/marmolista.webp">
+    <link rel="preload" as="image" href="/public/chorreo.webp">
     <meta property="og:title" content="Mármoles Barreto Murcia | Marmolista y Chorreo de Arena">
     <meta property="og:description" content="Encimeras y restauración en Murcia. Chorreo de arena: eliminar pintura/óxido, anti-deslizante, limpieza de piedra y metal.">
     <meta property="og:type" content="website">
@@ -28,7 +30,7 @@
     <meta name="twitter:title" content="Mármoles Barreto Murcia">
     <meta name="twitter:description" content="Marmolista y chorreo de arena en Murcia: encimeras, restauración y limpieza profesional.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/public/tailwind.css" rel="stylesheet">
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
       <symbol id="icon-bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></symbol>
       <symbol id="icon-map" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></symbol>
@@ -46,24 +48,7 @@
     <!-- Google Fonts: Playfair Display para elegancia, Lato para modernidad -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'marble-dark': '#1a1a1a',
-                        'marble-gray': '#f4f4f4',
-                        'gold-accent': '#c5a059',
-                        'stone-500': '#78716c',
-                    },
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Lato"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    
     <style>
         html { overflow-x: hidden; }
         /* Animaciones sutiles */
@@ -259,7 +244,10 @@
     <!-- Sección Marmolista (ubicada tras "Tradición familiar y tecnología punta") -->
     <section id="marmolista" class="py-0 flex flex-col md:flex-row-reverse bg-marble-dark text-white overflow-hidden">
         <div class="md:w-1/2 relative min-h-[320px] md:min-h-[500px]">
-            <img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" width="1024" height="683" srcset="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg 1024w, https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg 768w" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <picture>
+                <source srcset="/public/marmolista.webp" type="image/webp">
+                <img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" width="1024" height="683" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            </picture>
             <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
         </div>
         <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
@@ -371,7 +359,10 @@
     <!-- SECCIÓN ESTRELLA: El Valor Añadido (Chorreo) -->
     <section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden cv-auto">
         <div class="md:w-1/2 relative min-h-[320px] md:min-h-[500px]">
-            <img src="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg" alt="Trabajos de restauración y texturizado al chorreo de arena" loading="lazy" decoding="async" width="1200" height="800" srcset="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg 1200w, https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg 768w" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <picture>
+                <source srcset="/public/chorreo.webp" type="image/webp">
+                <img src="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg" alt="Trabajos de restauración y texturizado al chorreo de arena" loading="lazy" decoding="async" width="1200" height="800" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            </picture>
             <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
         </div>
         <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
