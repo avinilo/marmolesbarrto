@@ -1,4 +1,6 @@
 const nodemailer = require('nodemailer');
+let Resend;
+try { ({ Resend } = require('resend')); } catch (_) {}
 
 function parseBody(req) {
   return new Promise((resolve, reject) => {
@@ -111,14 +113,31 @@ module.exports = async (req, res) => {
     html: renderEmailTemplate(),
   };
 
+  // Preferir Resend si está configurado
+  if (Resend && process.env.RESEND_API_KEY) {
+    try {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      const resendFrom = process.env.MAIL_FROM || process.env.RESEND_FROM || 'onboarding@resend.dev';
+      const r = await resend.emails.send({ from: resendFrom, to, subject: mailOptions.subject, html: mailOptions.html, text: mailOptions.text });
+      if (r && r.error) throw new Error(String(r.error.message || 'Resend error'));
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify({ ok: true, provider: 'resend' }));
+      return;
+    } catch (err) {
+      console.error('Resend send error:', err && err.message);
+      // si falla Resend, continuar a SMTP si está configurado
+    }
+  }
+
   try {
     await transporter.verify();
     await transporter.sendMail(mailOptions);
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ ok: true }));
+    res.end(JSON.stringify({ ok: true, provider: 'smtp' }));
   } catch (err) {
-    console.error('Email send error:', err && err.message);
+    console.error('SMTP send error:', err && err.message);
     res.statusCode = 500;
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify({ error: 'Error enviando email' }));
