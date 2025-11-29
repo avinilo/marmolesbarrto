@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mármoles Barreto | Maestros de la Piedra Natural</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts: Playfair Display para elegancia, Lato para modernidad -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'marble-dark': '#1a1a1a',
+                        'marble-gray': '#f4f4f4',
+                        'gold-accent': '#c5a059',
+                        'stone-500': '#78716c',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animaciones sutiles */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+        }
+
+        /* Textura sutil de fondo */
+        .bg-texture {
+            background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.03" fill-rule="evenodd"/%3E%3C/svg%3E');
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-marble-gray overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold tracking-widest text-marble-dark">
+                MÁRMOLES <span class="text-gold-accent">BARRETO</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase text-gray-600">
+                <a href="#inicio" class="hover:text-gold-accent transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-gold-accent transition-colors">La Empresa</a>
+                <a href="#servicios" class="hover:text-gold-accent transition-colors">Servicios</a>
+                <a href="#exclusivo" class="hover:text-gold-accent transition-colors text-gold-accent">Restauración</a>
+                <a href="#proyectos" class="hover:text-gold-accent transition-colors">Proyectos</a>
+                <a href="#contacto" class="hover:text-gold-accent transition-colors">Contacto</a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-marble-dark focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col space-y-4 px-6 md:hidden">
+            <a href="#inicio" class="text-gray-800 hover:text-gold-accent">Inicio</a>
+            <a href="#nosotros" class="text-gray-800 hover:text-gold-accent">La Empresa</a>
+            <a href="#servicios" class="text-gray-800 hover:text-gold-accent">Servicios</a>
+            <a href="#exclusivo" class="text-gold-accent font-bold">Restauración y Chorreo</a>
+            <a href="#proyectos" class="text-gray-800 hover:text-gold-accent">Proyectos</a>
+            <a href="#contacto" class="text-gray-800 hover:text-gold-accent">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center bg-fixed bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <p class="text-gold-accent tracking-[0.2em] uppercase text-sm mb-4 font-bold animate-fade-in">Artesanía en Piedra desde 1998</p>
+            <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
+                Transformamos la piedra en <br/> <span class="italic text-gray-200">Elegancia Eterna</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto">
+                Especialistas en mármoles, granitos y cuarzos. Desde cocinas de vanguardia hasta restauración de patrimonio.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contacto" class="px-8 py-4 bg-gold-accent text-white uppercase tracking-wider text-sm font-bold hover:bg-yellow-600 transition-colors duration-300">
+                    Solicitar Presupuesto
+                </a>
+                <a href="#exclusivo" class="px-8 py-4 border border-white text-white uppercase tracking-wider text-sm font-bold hover:bg-white hover:text-black transition-colors duration-300">
+                    Descubre el Chorreo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros (Badge 25 Años) -->
+    <section id="nosotros" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative fade-in-up observer-target">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-marble-gray z-0 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <!-- IMAGEN ACTUALIZADA: Chorreo con arena -->
+                    <img src="https://domfesasl.com/wp-content/uploads/2020/12/chorreado-con-arena.jpg" alt="Máquina de chorreo de arena" class="relative z-10 shadow-2xl w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-sm">
+                    <div class="absolute -bottom-10 -right-10 bg-gold-accent text-white p-8 shadow-lg z-20">
+                        <span class="block text-5xl font-serif font-bold">25+</span>
+                        <span class="block text-sm uppercase tracking-widest mt-2">Años de<br>Experiencia</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-in-up observer-target" style="transition-delay: 200ms;">
+                    <h2 class="text-4xl font-serif text-marble-dark mb-6">Tradición familiar y tecnología punta</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        En <strong>Mármoles Barreto</strong>, fusionamos el arte tradicional del cantero con la precisión de la tecnología moderna. Llevamos más de dos décadas trabajando los materiales más nobles para clientes que buscan distinción y durabilidad.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        No solo instalamos cocinas; creamos atmósferas. Desde el corte preciso hasta el acabado final con nuestra maquinaria de chorreo, controlamos cada paso del proceso para garantizar la excelencia.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-gold-accent mr-4"></i> Maestros Marmolistas Certificados
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-gold-accent mr-4"></i> Taller propio con corte y pulido
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-gold-accent mr-4"></i> Garantía en materiales e instalación
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Clásicos -->
+    <section id="servicios" class="py-20 bg-stone-50 bg-texture">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">Nuestros Servicios</span>
+                <h2 class="text-4xl font-serif text-marble-dark mt-2">Excelencia en cada detalle</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group">
+                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent transition-colors">
+                        <i class="fas fa-utensils text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Cocinas y Baños</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Trabajamos con las mejores marcas (Silestone, Dekton, Neolith) y piedra natural para crear encimeras resistentes, higiénicas y espectaculares.
+                    </p>
+                    <a href="#contacto" class="text-sm font-bold text-marble-dark border-b border-gold-accent pb-1">Ver materiales</a>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group" style="transition-delay: 100ms;">
+                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent transition-colors">
+                        <i class="fas fa-layer-group text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Suelos y Revestimientos</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Desde suelos de mármol de gran formato hasta escaleras voladas. Soluciones técnicas y estéticas para interiores y exteriores.
+                    </p>
+                    <a href="#contacto" class="text-sm font-bold text-marble-dark border-b border-gold-accent pb-1">Consultar opciones</a>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group" style="transition-delay: 200ms;">
+                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent transition-colors">
+                        <i class="fas fa-cross text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Arte Funerario</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Diseño y fabricación de lápidas, panteones y grabados con la máxima delicadeza y respeto. Diseños clásicos y modernos.
+                    </p>
+                    <a href="#contacto" class="text-sm font-bold text-marble-dark border-b border-gold-accent pb-1">Ver catálogo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESTRELLA: El Valor Añadido (Chorreo) -->
+    <section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden">
+        <div class="md:w-1/2 relative min-h-[500px]">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Textura piedra chorreada" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
+        </div>
+        <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
+            <span class="text-gold-accent font-bold tracking-widest uppercase mb-4">Tecnología Especializada</span>
+            <h2 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">Restauración y Texturizado al Chorreo de Arena</h2>
+            <p class="text-gray-400 mb-8 text-lg">
+                Pocos talleres cuentan con nuestra capacidad de chorreo industrial. Esto nos permite ir más allá del corte y pulido estándar.
+            </p>
+            
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fas fa-swimmer text-gold-accent"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-1">Seguridad Anti-deslizante</h4>
+                        <p class="text-sm text-gray-500">Creamos texturas rugosas ideales para bordes de piscinas, platos de ducha y escaleras exteriores. Seguridad sin perder estética.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fas fa-history text-gold-accent"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-1">Restauración de Piedra Antigua</h4>
+                        <p class="text-sm text-gray-500">Devolvemos la vida a fachadas, columnas y ornamentos de piedra antiguos, eliminando suciedad y grafitis sin dañar el material base.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fas fa-gem text-gold-accent"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-1">Acabados "Envejecidos"</h4>
+                        <p class="text-sm text-gray-500">Logramos un efecto rústico y natural en mármoles nuevos, perfecto para casas de campo o diseños vintage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section id="proyectos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">Portafolio</span>
+                    <h2 class="text-4xl font-serif text-marble-dark mt-2">Nuestros Trabajos</h2>
+                </div>
+                <a href="#contacto" class="hidden md:inline-block text-marble-dark hover:text-gold-accent transition-colors font-bold border-b-2 border-transparent hover:border-gold-accent mt-4 md:mt-0">
+                    Ver más en Instagram <i class="fab fa-instagram ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Grid Galería Actualizado con las imágenes del usuario -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Imagen 1: Encimeras Cocina Madrid (Principal) -->
+                <div class="group relative overflow-hidden h-80 lg:col-span-2 cursor-pointer fade-in-up observer-target">
+                    <img src="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg" alt="Encimera Cocina Madrid" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Cocinas</p>
+                            <h3 class="text-white text-xl font-serif">Encimeras de Diseño</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2: Cocina Blanca -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 100ms;">
+                    <img src="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg" alt="Cocina Blanca Mármol" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Residencial</p>
+                            <h3 class="text-white text-xl font-serif">Blancos Puros</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3: Detalle Encimera -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 150ms;">
+                    <img src="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg" alt="Detalle Encimera" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Materiales</p>
+                            <h3 class="text-white text-xl font-serif">Acabados Perfectos</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 4: Cocina Negra -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 200ms;">
+                    <img src="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg" alt="Cocina Negra" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Tendencias</p>
+                            <h3 class="text-white text-xl font-serif">Elegancia en Negro</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 5: Granito/Mármol detalle -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 250ms;">
+                    <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480" alt="Detalle Granito" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Piedra Natural</p>
+                            <h3 class="text-white text-xl font-serif">Granitos Exclusivos</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 6: Expertos en Taller -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 300ms;">
+                    <img src="https://marmolistasengranada.com/wp-content/uploads/2024/02/expertos-marmolistas-en-granada.jpg" alt="Taller Marmolistas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">El Taller</p>
+                            <h3 class="text-white text-xl font-serif">Maestros Artesanos</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nueva Imagen 1: Baño Lujo (Para cuadrar columnas) -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 350ms;">
+                    <img src="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg" alt="Baño Mármol Lujo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Baños</p>
+                            <h3 class="text-white text-xl font-serif">Baños de Lujo</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nueva Imagen 2: Pureza en Blanco (Para cuadrar columnas) -->
+                <div class="group relative overflow-hidden h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 400ms;">
+                    <img src="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg" alt="Baño Mármol Blanco" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Diseño</p>
+                            <h3 class="text-white text-xl font-serif">Pureza en Blanco</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 7: Arte Funerario (Actualizada con Mausoleo de Lujo) -->
+                <div class="group relative overflow-hidden h-80 lg:col-span-3 cursor-pointer fade-in-up observer-target" style="transition-delay: 450ms;">
+                    <img src="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg" alt="Mausoleo de lujo en mármol" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" style="object-position: center 60%;">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                        <div>
+                            <p class="text-gold-accent text-xs font-bold uppercase">Arte Funerario</p>
+                            <h3 class="text-white text-xl font-serif">Lápidas y Panteones</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Materiales / Logos Marcas -->
+    <section class="py-12 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm uppercase tracking-widest mb-8">Trabajamos con las mejores marcas</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Logos simulados con texto por simplicidad -->
+                <span class="text-2xl font-bold font-serif text-gray-700">COSENTINO</span>
+                <span class="text-2xl font-bold font-serif text-gray-700">DEKTON</span>
+                <span class="text-2xl font-bold font-serif text-gray-700">NEOLITH</span>
+                <span class="text-2xl font-bold font-serif text-gray-700">SILESTONE</span>
+                <span class="text-2xl font-bold font-serif text-gray-700">NATURAMIA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-marble-dark text-white relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/3">
+                    <h2 class="text-4xl font-serif mb-6">Hablemos de su proyecto</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Visite nuestro taller o envíenos un mensaje. Asesoramos sin compromiso para encontrar la piedra perfecta para su hogar.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-gold-accent w-8 text-center"></i>
+                            <a href="https://maps.app.goo.gl/LKH7VJmydbacn4TWA" target="_blank" class="ml-4 text-gray-300 hover:text-white hover:underline transition-colors">
+                                Ver ubicación en Google Maps
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-gold-accent w-8 text-center"></i>
+                            <a href="tel:+34623593033" class="ml-4 text-gray-300 hover:text-white transition-colors">623 59 30 33</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-gold-accent w-8 text-center"></i>
+                            <a href="mailto:josefranciscobarretolopez@gmail.com" class="ml-4 text-gray-300 hover:text-white transition-colors break-all">josefranciscobarretolopez@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-gold-accent w-8 text-center"></i>
+                            <span class="ml-4 text-gray-300">Lun - Vie: 08:00 - 18:00</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 flex space-x-4">
+                        <a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3 bg-white text-gray-800 p-8 md:p-12 rounded-sm shadow-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Mensaje enviado. Gracias por contactar con Mármoles Barreto.');">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Nombre</label>
+                                <input type="text" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su teléfono">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Tipo de Proyecto</label>
+                            <select class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors">
+                                <option>Encimera de Cocina</option>
+                                <option>Reforma de Baño</option>
+                                <option>Restauración / Chorreo</option>
+                                <option>Arte Funerario</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Mensaje</label>
+                            <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Cuéntenos más sobre su idea..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-marble-dark text-white font-bold uppercase tracking-wider py-4 hover:bg-gold-accent transition-colors duration-300">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-8 border-t border-gray-800 text-center text-sm">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2024 Mármoles Barreto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts simples -->
+    <script>
+        // Menu Mobile Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('shadow-md', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // Intersection Observer para animaciones
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Solo animar una vez
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.observer-target').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
