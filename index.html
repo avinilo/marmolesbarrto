@@ -74,6 +74,9 @@
             background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.03" fill-rule="evenodd"/%3E%3C/svg%3E');
         }
 
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+
         .hero-bg { background-size: cover; background-position: center; background-image: url('/hero.webp'); }
         @media (min-width: 768px) { .hero-bg { background-image: url('/hero.webp'); } }
 
@@ -344,72 +347,6 @@
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section id="testimonios" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-10">
-                <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">Opiniones</span>
-                <h2 class="text-3xl md:text-4xl font-serif text-marble-dark mt-2">Clientes de la Región de Murcia</h2>
-            </div>
-            <div class="relative">
-                <div class="overflow-x-auto snap-x snap-mandatory" id="testimonial-scroller">
-                    <div class="flex gap-6">
-                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
-                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
-                                <div class="text-stone-500 text-sm mb-4">“Encimera nueva en la cocina, quedó muy bien. Tardaron poco.”</div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
-                                    <div class="text-sm text-stone-700">Carmen (Murcia centro)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
-                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
-                                <div class="text-stone-500 text-sm mb-4">“Me arreglaron una lápida antigua, se nota el cuidado. Bien de precio.”</div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
-                                    <div class="text-sm text-stone-700">Pedro (Cartagena)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
-                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
-                                <div class="text-stone-500 text-sm mb-4">“Chorreo para quitar pintura de una moto. Quedó lista para pintar.”</div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
-                                    <div class="text-sm text-stone-700">Lola (San Javier)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
-                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
-                                <div class="text-stone-500 text-sm mb-4">“Pusieron suelo de mármol en el salón. Limpio y sin sorpresas.”</div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
-                                    <div class="text-sm text-stone-700">Juan (Alcantarilla)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
-                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
-                                <div class="text-stone-500 text-sm mb-4">“Plato de ducha antideslizante con chorreo, se nota el agarre.”</div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
-                                    <div class="text-sm text-stone-700">Marta (Mazarrón)</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-y-0 left-0 flex items-center">
-                    <button id="testimonios-prev" aria-label="Anterior" class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-marble-dark hover:bg-gold-accent hover:text-white"><i class="fas fa-chevron-left"></i></button>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center">
-                    <button id="testimonios-next" aria-label="Siguiente" class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-marble-dark hover:bg-gold-accent hover:text-white"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA intermedio -->
     <section class="py-12 bg-stone-50">
@@ -605,6 +542,67 @@
         </div>
     </section>
 
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-10">
+                <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">Opiniones</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-marble-dark mt-2">Clientes de la Región de Murcia</h2>
+            </div>
+            <div>
+                <div class="overflow-x-auto no-scrollbar snap-x snap-mandatory" id="testimonial-scroller">
+                    <div class="flex gap-6">
+                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
+                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
+                                <div class="text-stone-500 text-sm mb-4">“Encimera nueva en la cocina, quedó muy bien. Tardaron poco.”</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
+                                    <div class="text-sm text-stone-700">Carmen (Murcia centro)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
+                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
+                                <div class="text-stone-500 text-sm mb-4">“Me arreglaron una lápida antigua, se nota el cuidado. Bien de precio.”</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
+                                    <div class="text-sm text-stone-700">Pedro (Cartagena)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
+                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
+                                <div class="text-stone-500 text-sm mb-4">“Chorreo para quitar pintura de una moto. Quedó lista para pintar.”</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
+                                    <div class="text-sm text-stone-700">Lola (San Javier)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
+                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
+                                <div class="text-stone-500 text-sm mb-4">“Pusieron suelo de mármol en el salón. Limpio y sin sorpresas.”</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
+                                    <div class="text-sm text-stone-700">Juan (Alcantarilla)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
+                            <div class="h-full bg-stone-50 p-6 rounded-sm shadow">
+                                <div class="text-stone-500 text-sm mb-4">“Plato de ducha antideslizante con chorreo, se nota el agarre.”</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><i class="fas fa-user"></i></div>
+                                    <div class="text-sm text-stone-700">Marta (Mazarrón)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Materiales / Logos Marcas -->
     <section class="py-12 bg-gray-50 border-t border-gray-200">
         <div class="container mx-auto px-6 text-center">
@@ -790,6 +788,15 @@
                     submitBtn.textContent = 'Enviar Solicitud';
                 }
             });
+        }
+
+        const autoScroller = document.getElementById('testimonial-scroller');
+        if (autoScroller) {
+            setInterval(() => {
+                const maxLeft = autoScroller.scrollWidth - autoScroller.clientWidth;
+                const next = autoScroller.scrollLeft + autoScroller.clientWidth;
+                autoScroller.scrollTo({ left: next > maxLeft ? 0 : next, behavior: 'smooth' });
+            }, 4000);
         }
     </script>
 
