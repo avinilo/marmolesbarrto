@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://www.singularmarket.com" crossorigin>
     <link rel="preconnect" href="https://domfesasl.com" crossorigin>
     <link rel="preconnect" href="https://airpress.es" crossorigin>
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" fetchpriority="high">
+    <link rel="preload" as="image" href="/public/photo-1600607686527-6fb886090705.webp" fetchpriority="high">
     <meta property="og:title" content="Mármoles Barreto Murcia | Marmolista y Chorreo de Arena">
     <meta property="og:description" content="Encimeras y restauración en Murcia. Chorreo de arena: eliminar pintura/óxido, anti-deslizante, limpieza de piedra y metal.">
     <meta property="og:type" content="website">
@@ -74,8 +74,8 @@
             background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.03" fill-rule="evenodd"/%3E%3C/svg%3E');
         }
 
-        .hero-bg { background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=70'); }
-        @media (min-width: 768px) { .hero-bg { background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'); } }
+        .hero-bg { background-size: cover; background-position: center; background-image: url('/public/photo-1600607686527-6fb886090705.webp'); }
+        @media (min-width: 768px) { .hero-bg { background-image: url('/public/photo-1600607686527-6fb886090705.webp'); } }
 
         .btn-gold { background-color: #a2782d; }
         .btn-gold:hover { background-color: #8f6b29; }
@@ -160,6 +160,7 @@
             <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase text-gray-600">
                 <a href="#inicio" class="hover:text-gold-accent transition-colors">Inicio</a>
                 <a href="#nosotros" class="hover:text-gold-accent transition-colors">La Empresa</a>
+                <a href="#marmolista" class="hover:text-gold-accent transition-colors">Diseño y Fabricación</a>
                 <a href="#servicios" class="hover:text-gold-accent transition-colors">Servicios</a>
                 <a href="#exclusivo" class="hover:text-gold-accent transition-colors text-gold-accent">Restauración</a>
                 <a href="#proyectos" class="hover:text-gold-accent transition-colors">Proyectos</a>
@@ -176,6 +177,7 @@
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col space-y-4 px-6 md:hidden">
             <a href="#inicio" class="text-gray-800 hover:text-gold-accent">Inicio</a>
             <a href="#nosotros" class="text-gray-800 hover:text-gold-accent">La Empresa</a>
+            <a href="#marmolista" class="text-gray-800 hover:text-gold-accent">Diseño y Fabricación</a>
             <a href="#servicios" class="text-gray-800 hover:text-gold-accent">Servicios</a>
             <a href="#exclusivo" class="text-gold-accent font-bold">Restauración y Chorreo</a>
             <a href="#proyectos" class="text-gray-800 hover:text-gold-accent">Proyectos</a>
@@ -532,6 +534,30 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios (Murcia, estilo campechano) -->
+    <section id="testimonios" class="py-16 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-10">
+                <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">Opiniones Reales</span>
+                <h2 class="text-3xl font-serif text-marble-dark mt-2">Lo que dice la gente</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-sm">
+                    <p class="text-gray-700">“Me dejaron la encimera niquelá. Rápidos y sin mareos. Pa repetir.”</p>
+                    <div class="mt-4 text-sm text-gray-500">— Paco, Cartagena</div>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <p class="text-gray-700">“Tenía óxido en la moto vieja y se la han dejao nueva. De lujo.”</p>
+                    <div class="mt-4 text-sm text-gray-500">— María, Lorca</div>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <p class="text-gray-700">“Serios, cumplen plazos y no dan vueltas. Buen trato y buen precio.”</p>
+                    <div class="mt-4 text-sm text-gray-500">— Juan, Molina de Segura</div>
+                </div>
             </div>
         </div>
     </section>

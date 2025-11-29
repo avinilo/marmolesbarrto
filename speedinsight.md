@@ -1,11 +1,11 @@
 Diagnostica problemas de rendimiento
 63
 Rendimiento
-78
+94
 Accesibilidad
 100
 Prácticas recomendadas
-92
+100
 SEO
 63
 FCP
@@ -30,14 +30,14 @@ Ampliar vista
 First Contentful Paint
 4,5 s
 Renderizado del mayor elemento con contenido
-9,9 s
+11,6 s
 Total Blocking Time
 0 ms
 Cambios de diseño acumulados
 0
 Speed Index
-5,0 s
-Captured at 29 nov 2025, 14:10 CET
+5,2 s
+Captured at 29 nov 2025, 14:48 CET
 Moto G Power emulado with Lighthouse 13.0.1
 Sesión de una sola página
 Carga inicial de la página
@@ -62,57 +62,34 @@ LCP
 
 TBT
 Estadísticas
-Solicitudes que bloquean el renderizado Ahorro estimado de 3920 ms
+Solicitudes que bloquean el renderizado Ahorro estimado de 1690 ms
 Las solicitudes están bloqueando el renderizado inicial de la página, lo que puede retrasar el LCP. Si se posponen o se insertan, estas solicitudes de red pueden salir de la ruta crítica.LCPFCPSin puntuar
 URL
 Tamaño de la transferencia
 Duración
 tailwindcss.com
-124,1 KiB	760 ms
+124,1 KiB	780 ms
 /3.4.17(cdn.tailwindcss.com)
 124,1 KiB
-760 ms
-Cloudflare CDN cdn 
-15,8 KiB	900 ms
-…css/all.min.css(cdnjs.cloudflare.com)
-15,8 KiB
-900 ms
+780 ms
 Google Fonts cdn 
 1,4 KiB	750 ms
 /css2?family=…(fonts.googleapis.com)
 1,4 KiB
 750 ms
-Visualización de fuentes Ahorro estimado de 30 ms
-Te recomendamos asignar el valor swap o optional a font-display para asegurarte de que el texto se vea de forma coherente. swap se puede optimizar aún más para mitigar los cambios de diseño con anulaciones de métricas de fuente.FCPSin puntuar
-URL
-Ahorro estimado
-Cloudflare CDN cdn 
-…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
-30 ms
-…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
-20 ms
-Redistribución forzada
-Se produce un reflow forzado cuando JavaScript consulta propiedades geométricas (como offsetWidth) después de que los estilos hayan sido invalidados por un cambio en el estado del DOM. Esto puede provocar un rendimiento deficiente. Consulta más información sobre los reflows forzados y las posibles mitigaciones.Sin puntuar
-Fuente
-Tiempo total de redistribución
-[sin asignación]
-93 ms
 Árbol de dependencia de red
 Evita encadenar solicitudes críticas reduciendo la longitud de las cadenas, disminuyendo el tamaño de los recursos o posponiendo la descarga de recursos innecesarios para mejorar la carga de la página.LCPSin puntuar
-Latencia de ruta crítica máxima: 695 ms
+Latencia de ruta crítica máxima: 725 ms
 Navegación inicial
-https://marmolesbarreto.com - 104 ms, 10,84 KiB
-/3.4.17(cdn.tailwindcss.com) - 158 ms, 124,09 KiB
-/3.4.17(cdn.tailwindcss.com) - 158 ms, 124,09 KiB
-…css/all.min.css(cdnjs.cloudflare.com) - 130 ms, 15,85 KiB
-…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com) - 694 ms, 103,06 KiB
-…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com) - 695 ms, 124,81 KiB
-/css2?family=…(fonts.googleapis.com) - 113 ms, 1,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 693 ms, 14,38 KiB
-…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 691 ms, 14,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 692 ms, 14,63 KiB
-…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 693 ms, 22,20 KiB
-…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 692 ms, 38,35 KiB
+https://marmolesbarreto.com - 255 ms, 11,22 KiB
+/3.4.17(cdn.tailwindcss.com) - 333 ms, 124,09 KiB
+/3.4.17(cdn.tailwindcss.com) - 333 ms, 124,09 KiB
+/css2?family=…(fonts.googleapis.com) - 265 ms, 1,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 724 ms, 14,38 KiB
+…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 723 ms, 14,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 724 ms, 14,63 KiB
+…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 725 ms, 22,20 KiB
+…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 725 ms, 38,35 KiB
 Orígenes preconectados
 Las sugerencias para establecer conexión previamente ayudan al navegador a establecer una conexión antes de que se cargue la página, lo que ahorra tiempo al hacer la primera solicitud a ese origen. A continuación se indican los orígenes con los que la página ha establecido conexión previamente.
 No hay orígenes con los que se haya establecido conexión previamente
@@ -120,10 +97,17 @@ Candidatos para establecer conexión previamente
 Añade sugerencias para establecer conexión previamente con tus orígenes más importantes, pero intenta usar 4 como máximo.
 Origen
 Ahorro estimado de LCP
-https://www.singularmarket.com
-390 ms
 https://domfesasl.com
-370 ms
+350 ms
+Visualización de fuentes Ahorro estimado de 20 ms
+Te recomendamos asignar el valor swap o optional a font-display para asegurarte de que el texto se vea de forma coherente. swap se puede optimizar aún más para mitigar los cambios de diseño con anulaciones de métricas de fuente.FCPSin puntuar
+URL
+Ahorro estimado
+Cloudflare CDN cdn 
+…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
+20 ms
+…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
+20 ms
 Mejorar la entrega de imágenes Ahorro estimado de 180 KiB
 Si se reduce el tiempo de descarga de las imágenes, se puede mejorar el tiempo de carga percibido de la página y el LCP. Más información sobre la optimización del tamaño de las imágenesLCPFCPSin puntuar
 URL
@@ -132,7 +116,7 @@ Ahorro estimado
 singularmarket.com
 141,9 KiB	116,9 KiB
 Trabajo marmolista: encimera y revestimiento en piedra natural
-<img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-…" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" width="1024" height="683" class="absolute inset-0 w-full h-full object-cover opacity-60">
+<img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-…" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" width="1024" height="683" srcset="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-…" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
 …06/BANDA_Townhouse2_web-24-1024x683.jpeg(www.singularmarket.com)
 141,9 KiB
 116,9 KiB
@@ -149,9 +133,78 @@ Máquina de chorreo de arena
 63,0 KiB
 Este archivo de imagen es más grande de lo necesario (1000x600) para las dimensiones mostradas (364x218). Usa imágenes adaptables para reducir el tamaño de descarga de la imagen.
 63,0 KiB
-Optimizar tamaño del DOM
 Desglose de LCP
+Cada subparte tiene estrategias de mejora específicas. Lo ideal es que la mayor parte del tiempo de LCP se dedique a cargar los recursos, no a los retrasos.LCPSin puntuar
+Subparte
+Duración
+Time to First Byte
+0 ms
+Retraso de renderizado de elementos
+2390 ms
+Transformamos la piedra en Elegancia Eterna
+<h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
 Terceros
+El código de terceros puede afectar mucho a la velocidad de carga. Reduce y aplaza la carga del código de terceros para priorizar el contenido de tu página.Sin puntuar
+Tercero
+Tamaño de la transferencia
+Tiempo del hilo principal
+tailwindcss.com
+124 KiB	87 ms
+https://cdn.tailwindcss.com
+0 KiB
+87 ms
+/3.4.17(cdn.tailwindcss.com)
+124 KiB
+0 ms
+Google Fonts cdn 
+105 KiB	0 ms
+…v40/nuFiD-vYS….woff2(fonts.gstatic.com)
+38 KiB
+0 ms
+…v40/nuFRD-vYS….woff2(fonts.gstatic.com)
+22 KiB
+0 ms
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com)
+15 KiB
+0 ms
+…v25/S6uyw4BMU….woff2(fonts.gstatic.com)
+14 KiB
+0 ms
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com)
+14 KiB
+0 ms
+/css2?family=…(fonts.googleapis.com)
+1 KiB
+0 ms
+Cloudflare CDN cdn 
+244 KiB	0 ms
+…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
+125 KiB
+0 ms
+…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
+103 KiB
+0 ms
+…css/all.min.css(cdnjs.cloudflare.com)
+16 KiB
+0 ms
+unsplash.com
+1276 KiB	0 ms
+/photo-160…-6fb886…?ixlib=…(images.unsplash.com)
+977 KiB
+0 ms
+/photo-160…-6fb886…?ixlib=…(images.unsplash.com)
+299 KiB
+0 ms
+domfesasl.com
+73 KiB	0 ms
+…12/chorreado-con-arena.jpg(domfesasl.com)
+73 KiB
+0 ms
+singularmarket.com
+142 KiB	0 ms
+…06/BANDA_Townhouse2_web-24-1024x683.jpeg(www.singularmarket.com)
+142 KiB
+0 ms
 Estas estadísticas también están disponibles en el panel Rendimiento de Chrome DevTools. Graba una traza para ver información más detallada.
 Diagnósticos
 Reduce el contenido CSS que no se use Ahorro estimado de 15 KiB
@@ -174,61 +227,33 @@ tailwindcss.com
 https://cdn.tailwindcss.com
 123,3 KiB
 37,5 KiB
-Evita tareas largas del hilo principal 5 tareas largas encontradas
+Evita tareas largas del hilo principal 2 tareas largas encontradas
 Enumera las tareas más largas del hilo principal, lo que es útil para identificar las que más contribuyen a la latencia. Consulta cómo evitar tareas largas del hilo principalTBTSin puntuar
 URL
 Hora de inicio
 Duración
 marmolesbarreto.com Propio
-456 ms
+274 ms
 https://marmolesbarreto.com
-1958 ms
-176 ms
-https://marmolesbarreto.com
-1624 ms
-134 ms
-https://marmolesbarreto.com
-786 ms
-96 ms
-https://marmolesbarreto.com
-1758 ms
-50 ms
+1626 ms
+274 ms
 tailwindcss.com
-75 ms
+88 ms
 https://cdn.tailwindcss.com
-1549 ms
-75 ms
+1538 ms
+88 ms
 Consulta más información sobre el rendimiento de tu aplicación. Estos datos no afectan directamente a la puntuación del rendimiento.
-Auditorías aprobadas (16)
+Auditorías aprobadas (18)
 Mostrar
-78
+94
 Accesibilidad
 Estas comprobaciones permiten identificar oportunidades para mejorar la accesibilidad de tu aplicación web. La detección automática solo puede detectar un subconjunto de problemas y no garantiza la accesibilidad de tu aplicación web, por lo que también te recomendamos que hagas pruebas manuales.
-Nombres y etiquetas
-Los botones no tienen nombres accesibles
-Si un botón no tiene un nombre accesible, los lectores de pantalla lo leerán en voz alta como "botón", lo que hace que el botón no resulte útil a los usuarios que necesitan lectores de pantalla. Consulta cómo hacer que los botones sean más accesibles
-Elementos con errores
-body.font-sans > nav#navbar > div.container > button#mobile-menu-btn
-<button id="mobile-menu-btn" class="md:hidden text-2xl text-marble-dark focus:outline-none">
-Los elementos <select> no tienen elementos <label> asociados.
-Los elementos <form> sin <label> eficaz pueden causar experiencias frustrantes para los usuarios de lectores de pantalla. Obtén más información sobre el elemento select.
-Elementos con errores
-Encimera de Cocina Reforma de Baño Restauración / Chorreo Chorreo de piezas (so…
-<select id="projectType" name="projectType" required="" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:bord…">
-Los enlaces no tienen nombres reconocibles
-Usar textos de enlace (y textos alternativos para las imágenes, si estas se usan como enlaces) que sean reconocibles, únicos y que se puedan seleccionar mejora la experiencia de navegación de los usuarios de lectores de pantalla. Consulta cómo hacer que los enlaces sean accesibles
-Elementos con errores
-div.flex > div.lg:w-1/3 > div.mt-10 > a.w-10
-<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-ce…">
-div.flex > div.lg:w-1/3 > div.mt-10 > a.w-10
-<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-ce…">
-A continuación se indican consejos para mejorar la semántica de los controles de tu aplicación. Estos consejos pueden mejorar la experiencia de los usuarios de tecnologías de asistencia, como los lectores de pantalla.
 Contraste
 Los colores de fondo y de primer plano no tienen una relación de contraste adecuada.
 Los textos con poco contraste resultan difíciles o imposibles de leer para muchos usuarios. Consulta cómo crear suficiente contraste de color
 Elementos con errores
 SOLICITAR PRESUPUESTO
-<a href="#contacto" class="w-fit md:w-auto mx-auto md:mx-0 text-center px-4 py-3 bg-gold-accent text-…">
+<a href="#contacto" class="w-fit md:w-auto mx-auto md:mx-0 text-center px-4 py-3 btn-gold text-white …">
 Corte y pulido de alto nivel, juntas ocultas y cantos personalizados. Higiene y…
 <p class="text-sm text-gray-500">
 MAESTRÍA MARMOLISTA Diseño y Fabricación en Piedra Natural Encimeras, suelos y…
@@ -244,7 +269,7 @@ MAESTRÍA MARMOLISTA Diseño y Fabricación en Piedra Natural Encimeras, suelos 
 SOLICITAR PRESUPUESTO MARMOLISTA
 <a href="#contacto" class="mt-8 inline-block w-fit bg-gold-accent text-white px-3 py-2 text-sm font-b…">
 CONTACTAR AHORA
-<a href="#contacto" class="mt-6 inline-block px-8 py-4 bg-gold-accent text-white uppercase tracking-w…">
+<a href="#contacto" class="mt-6 inline-block px-8 py-4 btn-gold text-white uppercase tracking-wider t…">
 Creamos texturas rugosas ideales para bordes de piscinas, platos de ducha y esc…
 <p class="text-sm text-gray-500">
 TECNOLOGÍA ESPECIALIZADA Restauración y Texturizado al Chorreo de Arena Pocos …
@@ -276,36 +301,3 @@ Encimeras de Cocina y Baño
 <h4 class="text-xl font-bold mb-1">
 Seguridad Anti-deslizante
 <h4 class="text-xl font-bold mb-1">
-Aquí tienes consejos para facilitar el desplazamiento con el teclado en tu aplicación.
-Elementos adicionales que se deben comprobar manualmente (10)
-Mostrar
-Estos elementos se ocupan de áreas que las herramientas de prueba automáticas no pueden analizar. Consulta más información sobre cómo revisar la accesibilidad en nuestra guía.
-Auditorías aprobadas (16)
-Mostrar
-No aplicable (39)
-Mostrar
-100
-Prácticas recomendadas
-Confianza y seguridad
-Asegura que la CSP sea efectiva frente a ataques XSS
-Usa una política de HSTS sólida
-Asegúrate de que el aislamiento de orígenes sea adecuado con COOP
-Mitiga el secuestro de clics con XFO o CSP
-Mitigar el XSS basado en DOM con Trusted Types
-Auditorías aprobadas (13)
-Mostrar
-No aplicable (2)
-Mostrar
-92
-SEO
-Estas comprobaciones aseguran que tu página siga las recomendaciones básicas sobre optimización en buscadores. Hay muchos otros factores adicionales que Lighthouse no valora aquí y que pueden afectar a tu posicionamiento en las búsquedas, como el rendimiento en las Métricas web principales. Consulta más información sobre las Directrices básicas de la Búsqueda de Google.
-Rastrear e indexar
-robots.txt no es válido 1 error encontrado
-Si el formato del archivo robots.txt no es correcto, es posible que los rastreadores no puedan interpretar cómo quieres que se rastree o indexe tu sitio web. Más información sobre robots.txt
-Line #
-Content
-Error
-3
-Sitemap: /sitemap.xml
-Invalid sitemap URL
-Para aparecer en los resultados de búsqueda, los rastreadores necesitan acceder a tu aplicación.
