@@ -25,9 +25,8 @@
     <meta name="twitter:title" content="Mármoles Barreto Murcia">
     <meta name="twitter:description" content="Marmolista y chorreo de arena en Murcia: encimeras, restauración y limpieza profesional.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" onload="this.rel='stylesheet'">
-    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts: Playfair Display para elegancia, Lato para modernidad -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
@@ -175,12 +174,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center">
-        <picture>
-            <source media="(max-width: 640px)" srcset="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=70">
-            <source media="(max-width: 1024px)" srcset="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=75">
-            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Piedra natural elegante" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-        </picture>
+    <section id="inicio" class="relative h-screen flex items-center justify-center md:bg-fixed bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
         <div class="absolute inset-0 hero-overlay"></div>
         <div class="relative z-10 text-center px-6 md:px-8 max-w-4xl mx-auto">
             <p class="text-gold-accent tracking-[0.2em] uppercase text-sm mb-4 font-bold animate-fade-in">Artesanía en Piedra desde 1998</p>
@@ -206,7 +200,7 @@
                 <div class="md:w-1/2 relative fade-in-up observer-target">
                     <div class="absolute top-4 left-4 md:-top-10 md:-left-10 w-40 h-40 bg-marble-gray z-0 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
                     <!-- IMAGEN ACTUALIZADA: Chorreo con arena -->
-                    <img src="https://domfesasl.com/wp-content/uploads/2020/12/chorreado-con-arena.jpg" alt="Máquina de chorreo de arena" loading="lazy" decoding="async" class="relative z-10 shadow-2xl w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-sm">
+                    <img src="https://domfesasl.com/wp-content/uploads/2020/12/chorreado-con-arena.jpg" alt="Máquina de chorreo de arena" loading="lazy" decoding="async" width="1024" height="683" class="relative z-10 shadow-2xl w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-sm">
                     <div class="absolute bottom-4 right-4 md:-bottom-10 md:-right-10 bg-gold-accent text-white p-4 md:p-8 shadow-lg z-20 rounded-sm w-11/12 sm:w-auto max-w-[calc(100%-2rem)] text-center">
                         <span class="block text-3xl md:text-5xl font-serif font-bold">25+</span>
                         <span class="block text-xs md:text-sm uppercase tracking-widest mt-2">Años de<br>Experiencia</span>
@@ -239,7 +233,7 @@
     <!-- Sección Marmolista (ubicada tras "Tradición familiar y tecnología punta") -->
     <section id="marmolista" class="py-0 flex flex-col md:flex-row-reverse bg-marble-dark text-white overflow-hidden">
         <div class="md:w-1/2 relative min-h-[320px] md:min-h-[500px]">
-            <img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" width="1024" height="683" class="absolute inset-0 w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
         </div>
         <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
@@ -350,7 +344,7 @@
     <!-- SECCIÓN ESTRELLA: El Valor Añadido (Chorreo) -->
     <section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden">
         <div class="md:w-1/2 relative min-h-[320px] md:min-h-[500px]">
-            <img src="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg" alt="Trabajos de restauración y texturizado al chorreo de arena" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <img src="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg" alt="Trabajos de restauración y texturizado al chorreo de arena" loading="lazy" decoding="async" width="1200" height="800" class="absolute inset-0 w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
         </div>
         <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
@@ -431,7 +425,7 @@
                 
                 <!-- Imagen 1: Encimeras Cocina Madrid (Principal) -->
                 <div class="group relative overflow-hidden h-64 md:h-80 lg:col-span-2 cursor-pointer fade-in-up observer-target">
-                    <img src="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg" alt="Encimera Cocina Madrid" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg" alt="Encimera Cocina Madrid" loading="lazy" decoding="async" width="1200" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Cocinas</p>
@@ -442,7 +436,7 @@
 
                 <!-- Imagen 2: Cocina Blanca -->
                 <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 100ms;">
-                    <img src="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg" alt="Cocina Blanca Mármol" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg" alt="Cocina Blanca Mármol" loading="lazy" decoding="async" width="1024" height="683" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Residencial</p>
@@ -453,7 +447,7 @@
 
                 <!-- Imagen 3: Detalle Encimera -->
                 <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 150ms;">
-                    <img src="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg" alt="Detalle Encimera" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg" alt="Detalle Encimera" loading="lazy" decoding="async" width="1280" height="720" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Materiales</p>
@@ -464,7 +458,7 @@
 
                 <!-- Imagen 4: Cocina Negra -->
                 <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 200ms;">
-                    <img src="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg" alt="Cocina Negra" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg" alt="Cocina Negra" loading="lazy" decoding="async" width="1024" height="683" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Tendencias</p>
@@ -475,7 +469,7 @@
 
                 <!-- Imagen 5: Granito/Mármol detalle -->
                 <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 250ms;">
-                    <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480" alt="Detalle Granito" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480" alt="Detalle Granito" loading="lazy" decoding="async" width="640" height="480" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Piedra Natural</p>
@@ -497,7 +491,7 @@
 
                 <!-- Nueva Imagen 1: Baño Lujo (Para cuadrar columnas) -->
                 <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 350ms;">
-                    <img src="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg" alt="Baño Mármol Lujo" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg" alt="Baño Mármol Lujo" loading="lazy" decoding="async" width="1024" height="683" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Baños</p>
@@ -508,7 +502,7 @@
 
                 <!-- Nueva Imagen 2: Pureza en Blanco (Para cuadrar columnas) -->
                 <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 400ms;">
-                    <img src="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg" alt="Baño Mármol Blanco" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg" alt="Baño Mármol Blanco" loading="lazy" decoding="async" width="1024" height="683" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Diseño</p>
@@ -519,7 +513,7 @@
 
                 <!-- Imagen 7: Arte Funerario (Actualizada con Mausoleo de Lujo) -->
                 <div class="group relative overflow-hidden h-80 lg:col-span-3 cursor-pointer fade-in-up observer-target" style="transition-delay: 450ms;">
-                    <img src="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg" alt="Mausoleo de lujo en mármol" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" style="object-position: center 60%;">
+                    <img src="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg" alt="Mausoleo de lujo en mármol" loading="lazy" decoding="async" width="1200" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" style="object-position: center 60%;">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Arte Funerario</p>
@@ -713,16 +707,3 @@
     </a>
 </body>
 </html>
-    <link rel="dns-prefetch" href="//images.unsplash.com">
-    <link rel="dns-prefetch" href="//domfesasl.com">
-    <link rel="dns-prefetch" href="//marmolescuesta.es">
-    <link rel="dns-prefetch" href="//fondoterra.es">
-    <link rel="dns-prefetch" href="//molinacaballero.com">
-    <link rel="dns-prefetch" href="//marmoleshorta.com">
-    <link rel="dns-prefetch" href="//images.milanuncios.com">
-    <link rel="dns-prefetch" href="//marmolistasengranada.com">
-    <link rel="dns-prefetch" href="//marmoleseverstone.com.mx">
-    <link rel="dns-prefetch" href="//www.stonecross.es">
-    <link rel="dns-prefetch" href="//www.marmoleriavalladares.com">
-    <link rel="dns-prefetch" href="//airpress.es">
-    <link rel="dns-prefetch" href="//www.singularmarket.com">
