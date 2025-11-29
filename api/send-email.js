@@ -12,7 +12,10 @@ function parseBody(req) {
 }
 
 async function getRequestBody(req) {
-  if (req.body && typeof req.body === 'object') return req.body;
+  if (req.body) {
+    if (typeof req.body === 'object') return req.body;
+    try { return JSON.parse(req.body); } catch (e) { /* fallthrough */ }
+  }
   return await parseBody(req);
 }
 
