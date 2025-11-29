@@ -38,6 +38,15 @@ module.exports = async (req, res) => {
     return;
   }
 
+  const requiredEnv = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS'];
+  const missing = requiredEnv.filter((k) => !process.env[k]);
+  if (missing.length) {
+    res.statusCode = 500;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ error: 'Configuración SMTP incompleta' }));
+    return;
+  }
+
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT || 587),
@@ -101,6 +110,7 @@ module.exports = async (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify({ ok: true }));
   } catch (err) {
+    console.error('Email send error:', err && err.message);
     res.statusCode = 500;
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify({ error: 'Error enviando email' }));
