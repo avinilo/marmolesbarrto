@@ -1,3 +1,4 @@
+
 Diagnostica problemas de rendimiento
 63
 Rendimiento
@@ -11,7 +12,7 @@ SEO
 FCP
 +2
 LCP
-+0
++1
 TBT
 +30
 CLS
@@ -30,14 +31,14 @@ Ampliar vista
 First Contentful Paint
 4,5 s
 Renderizado del mayor elemento con contenido
-11,6 s
+7,3 s
 Total Blocking Time
 0 ms
 Cambios de diseño acumulados
 0
 Speed Index
-5,2 s
-Captured at 29 nov 2025, 14:48 CET
+5,3 s
+Captured at 29 nov 2025, 15:26 CET
 Moto G Power emulado with Lighthouse 13.0.1
 Sesión de una sola página
 Carga inicial de la página
@@ -62,34 +63,43 @@ LCP
 
 TBT
 Estadísticas
-Solicitudes que bloquean el renderizado Ahorro estimado de 1690 ms
+Solicitudes que bloquean el renderizado Ahorro estimado de 1650 ms
 Las solicitudes están bloqueando el renderizado inicial de la página, lo que puede retrasar el LCP. Si se posponen o se insertan, estas solicitudes de red pueden salir de la ruta crítica.LCPFCPSin puntuar
 URL
 Tamaño de la transferencia
 Duración
 tailwindcss.com
-124,1 KiB	780 ms
+124,1 KiB	770 ms
 /3.4.17(cdn.tailwindcss.com)
 124,1 KiB
-780 ms
+770 ms
 Google Fonts cdn 
 1,4 KiB	750 ms
 /css2?family=…(fonts.googleapis.com)
 1,4 KiB
 750 ms
+Visualización de fuentes Ahorro estimado de 30 ms
+Te recomendamos asignar el valor swap o optional a font-display para asegurarte de que el texto se vea de forma coherente. swap se puede optimizar aún más para mitigar los cambios de diseño con anulaciones de métricas de fuente.FCPSin puntuar
+URL
+Ahorro estimado
+Cloudflare CDN cdn 
+…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
+30 ms
+…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
+30 ms
 Árbol de dependencia de red
 Evita encadenar solicitudes críticas reduciendo la longitud de las cadenas, disminuyendo el tamaño de los recursos o posponiendo la descarga de recursos innecesarios para mejorar la carga de la página.LCPSin puntuar
-Latencia de ruta crítica máxima: 725 ms
+Latencia de ruta crítica máxima: 734 ms
 Navegación inicial
-https://marmolesbarreto.com - 255 ms, 11,22 KiB
-/3.4.17(cdn.tailwindcss.com) - 333 ms, 124,09 KiB
-/3.4.17(cdn.tailwindcss.com) - 333 ms, 124,09 KiB
-/css2?family=…(fonts.googleapis.com) - 265 ms, 1,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 724 ms, 14,38 KiB
-…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 723 ms, 14,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 724 ms, 14,63 KiB
-…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 725 ms, 22,20 KiB
-…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 725 ms, 38,35 KiB
+https://marmolesbarreto.com - 336 ms, 11,97 KiB
+/3.4.17(cdn.tailwindcss.com) - 387 ms, 124,09 KiB
+/3.4.17(cdn.tailwindcss.com) - 387 ms, 124,09 KiB
+/css2?family=…(fonts.googleapis.com) - 352 ms, 1,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 733 ms, 14,38 KiB
+…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 732 ms, 14,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 733 ms, 14,63 KiB
+…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 734 ms, 22,20 KiB
+…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 734 ms, 38,35 KiB
 Orígenes preconectados
 Las sugerencias para establecer conexión previamente ayudan al navegador a establecer una conexión antes de que se cargue la página, lo que ahorra tiempo al hacer la primera solicitud a ese origen. A continuación se indican los orígenes con los que la página ha establecido conexión previamente.
 No hay orígenes con los que se haya establecido conexión previamente
@@ -97,17 +107,10 @@ Candidatos para establecer conexión previamente
 Añade sugerencias para establecer conexión previamente con tus orígenes más importantes, pero intenta usar 4 como máximo.
 Origen
 Ahorro estimado de LCP
+https://www.singularmarket.com
+390 ms
 https://domfesasl.com
 350 ms
-Visualización de fuentes Ahorro estimado de 20 ms
-Te recomendamos asignar el valor swap o optional a font-display para asegurarte de que el texto se vea de forma coherente. swap se puede optimizar aún más para mitigar los cambios de diseño con anulaciones de métricas de fuente.FCPSin puntuar
-URL
-Ahorro estimado
-Cloudflare CDN cdn 
-…webfonts/fa-solid-900.woff2(cdnjs.cloudflare.com)
-20 ms
-…webfonts/fa-brands-400.woff2(cdnjs.cloudflare.com)
-20 ms
 Mejorar la entrega de imágenes Ahorro estimado de 180 KiB
 Si se reduce el tiempo de descarga de las imágenes, se puede mejorar el tiempo de carga percibido de la página y el LCP. Más información sobre la optimización del tamaño de las imágenesLCPFCPSin puntuar
 URL
@@ -140,7 +143,7 @@ Duración
 Time to First Byte
 0 ms
 Retraso de renderizado de elementos
-2390 ms
+2480 ms
 Transformamos la piedra en Elegancia Eterna
 <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
 Terceros
@@ -149,10 +152,10 @@ Tercero
 Tamaño de la transferencia
 Tiempo del hilo principal
 tailwindcss.com
-124 KiB	87 ms
+124 KiB	71 ms
 https://cdn.tailwindcss.com
 0 KiB
-87 ms
+71 ms
 /3.4.17(cdn.tailwindcss.com)
 124 KiB
 0 ms
@@ -186,14 +189,6 @@ Cloudflare CDN cdn
 0 ms
 …css/all.min.css(cdnjs.cloudflare.com)
 16 KiB
-0 ms
-unsplash.com
-1276 KiB	0 ms
-/photo-160…-6fb886…?ixlib=…(images.unsplash.com)
-977 KiB
-0 ms
-/photo-160…-6fb886…?ixlib=…(images.unsplash.com)
-299 KiB
 0 ms
 domfesasl.com
 73 KiB	0 ms
@@ -233,15 +228,15 @@ URL
 Hora de inicio
 Duración
 marmolesbarreto.com Propio
-274 ms
+243 ms
 https://marmolesbarreto.com
-1626 ms
-274 ms
+1611 ms
+243 ms
 tailwindcss.com
-88 ms
+71 ms
 https://cdn.tailwindcss.com
-1538 ms
-88 ms
+1540 ms
+71 ms
 Consulta más información sobre el rendimiento de tu aplicación. Estos datos no afectan directamente a la puntuación del rendimiento.
 Auditorías aprobadas (18)
 Mostrar
@@ -288,6 +283,10 @@ PORTAFOLIO
 <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">
 PORTAFOLIO Nuestros Trabajos COCINAS Encimeras de Diseño RESIDENCIAL Blanco…
 <section id="proyectos" class="py-20 bg-white">
+OPINIONES
+<span class="text-gold-accent text-sm font-bold uppercase tracking-widest">
+OPINIONES Clientes de la Región de Murcia “Encimera nueva en la cocina, quedó m…
+<section id="testimonios" class="py-16 bg-white">
 © 2024 Mármoles Barreto. Todos los derechos reservados.
 <p>
 © 2024 Mármoles Barreto. Todos los derechos reservados.
@@ -301,3 +300,10 @@ Encimeras de Cocina y Baño
 <h4 class="text-xl font-bold mb-1">
 Seguridad Anti-deslizante
 <h4 class="text-xl font-bold mb-1">
+Aquí tienes consejos para facilitar el desplazamiento con el teclado en tu aplicación.
+Prácticas recomendadas
+Los enlaces idénticos tienen la misma finalidad.
+Estos elementos destacan las prácticas recomendadas de accesibilidad más habituales.
+Elementos adicionales que se deben comprobar manualmente (10)
+Mostrar
+Estos elementos se ocupan de áreas que las herramientas de prueba automáticas no pueden analizar. Consulta más información sobre cómo revisar la accesibilidad en nuestra guía.
