@@ -48,6 +48,7 @@
         }
     </script>
     <style>
+        html { overflow-x: hidden; }
         /* Animaciones sutiles */
         .fade-in-up {
             opacity: 0;
@@ -136,7 +137,7 @@
     <!-- Hero Section -->
     <section id="inicio" class="relative h-screen flex items-center justify-center bg-fixed bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
         <div class="absolute inset-0 hero-overlay"></div>
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div class="relative z-10 text-center px-6 md:px-8 max-w-4xl mx-auto">
             <p class="text-gold-accent tracking-[0.2em] uppercase text-sm mb-4 font-bold animate-fade-in">Artesanía en Piedra desde 1998</p>
             <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
                 Transformamos la piedra en <br/> <span class="italic text-gray-200">Elegancia Eterna</span>
@@ -160,7 +161,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-16">
                 <div class="md:w-1/2 relative fade-in-up observer-target">
-                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-marble-gray z-0 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <div class="absolute top-4 left-4 md:-top-10 md:-left-10 w-40 h-40 bg-marble-gray z-0 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
                     <!-- IMAGEN ACTUALIZADA: Chorreo con arena -->
                     <img src="https://domfesasl.com/wp-content/uploads/2020/12/chorreado-con-arena.jpg" alt="Máquina de chorreo de arena" loading="lazy" decoding="async" class="relative z-10 shadow-2xl w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-sm">
                     <div class="absolute bottom-4 right-4 md:-bottom-10 md:-right-10 bg-gold-accent text-white p-4 md:p-8 shadow-lg z-20 rounded-sm w-11/12 sm:w-auto max-w-[calc(100%-2rem)] text-center">
