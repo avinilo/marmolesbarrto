@@ -1,24 +1,25 @@
 
+
 Diagnostica problemas de rendimiento
-63
+70
 Rendimiento
-94
+96
 Accesibilidad
-100
+96
 Prácticas recomendadas
 100
 SEO
-63
+70
 FCP
 +2
 LCP
-+1
++7
 TBT
 +30
 CLS
 +25
 SI
-+6
++7
 Rendimiento
 Los valores son estimaciones y pueden variar. La puntuación del rendimiento se calcula directamente a partir de estas métricas.Ver calculadora.
 0–49
@@ -31,14 +32,14 @@ Ampliar vista
 First Contentful Paint
 4,5 s
 Renderizado del mayor elemento con contenido
-7,3 s
+5,0 s
 Total Blocking Time
 0 ms
 Cambios de diseño acumulados
-0
+0.011
 Speed Index
-5,3 s
-Captured at 29 nov 2025, 15:26 CET
+4,5 s
+Captured at 29 nov 2025, 15:31 CET
 Moto G Power emulado with Lighthouse 13.0.1
 Sesión de una sola página
 Carga inicial de la página
@@ -62,17 +63,19 @@ FCP
 LCP
 
 TBT
+
+CLS
 Estadísticas
-Solicitudes que bloquean el renderizado Ahorro estimado de 1650 ms
+Solicitudes que bloquean el renderizado Ahorro estimado de 1710 ms
 Las solicitudes están bloqueando el renderizado inicial de la página, lo que puede retrasar el LCP. Si se posponen o se insertan, estas solicitudes de red pueden salir de la ruta crítica.LCPFCPSin puntuar
 URL
 Tamaño de la transferencia
 Duración
 tailwindcss.com
-124,1 KiB	770 ms
+124,1 KiB	780 ms
 /3.4.17(cdn.tailwindcss.com)
 124,1 KiB
-770 ms
+780 ms
 Google Fonts cdn 
 1,4 KiB	750 ms
 /css2?family=…(fonts.googleapis.com)
@@ -89,28 +92,23 @@ Cloudflare CDN cdn
 30 ms
 Árbol de dependencia de red
 Evita encadenar solicitudes críticas reduciendo la longitud de las cadenas, disminuyendo el tamaño de los recursos o posponiendo la descarga de recursos innecesarios para mejorar la carga de la página.LCPSin puntuar
-Latencia de ruta crítica máxima: 734 ms
+Latencia de ruta crítica máxima: 495 ms
 Navegación inicial
-https://marmolesbarreto.com - 336 ms, 11,97 KiB
-/3.4.17(cdn.tailwindcss.com) - 387 ms, 124,09 KiB
-/3.4.17(cdn.tailwindcss.com) - 387 ms, 124,09 KiB
-/css2?family=…(fonts.googleapis.com) - 352 ms, 1,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 733 ms, 14,38 KiB
-…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 732 ms, 14,45 KiB
-…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 733 ms, 14,63 KiB
-…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 734 ms, 22,20 KiB
-…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 734 ms, 38,35 KiB
+https://marmolesbarreto.com - 70 ms, 11,97 KiB
+/3.4.17(cdn.tailwindcss.com) - 142 ms, 124,10 KiB
+/3.4.17(cdn.tailwindcss.com) - 142 ms, 124,10 KiB
+/css2?family=…(fonts.googleapis.com) - 89 ms, 1,45 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 494 ms, 14,38 KiB
+…v25/S6uyw4BMU….woff2(fonts.gstatic.com) - 495 ms, 14,44 KiB
+…v25/S6u9w4BMU….woff2(fonts.gstatic.com) - 494 ms, 14,63 KiB
+…v40/nuFRD-vYS….woff2(fonts.gstatic.com) - 494 ms, 22,20 KiB
+…v40/nuFiD-vYS….woff2(fonts.gstatic.com) - 495 ms, 38,35 KiB
 Orígenes preconectados
 Las sugerencias para establecer conexión previamente ayudan al navegador a establecer una conexión antes de que se cargue la página, lo que ahorra tiempo al hacer la primera solicitud a ese origen. A continuación se indican los orígenes con los que la página ha establecido conexión previamente.
 No hay orígenes con los que se haya establecido conexión previamente
 Candidatos para establecer conexión previamente
 Añade sugerencias para establecer conexión previamente con tus orígenes más importantes, pero intenta usar 4 como máximo.
-Origen
-Ahorro estimado de LCP
-https://www.singularmarket.com
-390 ms
-https://domfesasl.com
-350 ms
+No hay más orígenes que sean buenos candidatos para establecer conexión previamente
 Mejorar la entrega de imágenes Ahorro estimado de 180 KiB
 Si se reduce el tiempo de descarga de las imágenes, se puede mejorar el tiempo de carga percibido de la página y el LCP. Más información sobre la optimización del tamaño de las imágenesLCPFCPSin puntuar
 URL
@@ -136,6 +134,15 @@ Máquina de chorreo de arena
 63,0 KiB
 Este archivo de imagen es más grande de lo necesario (1000x600) para las dimensiones mostradas (364x218). Usa imágenes adaptables para reducir el tamaño de descarga de la imagen.
 63,0 KiB
+Causantes de los cambios de diseño
+Los cambios de diseño se producen cuando los elementos se mueven sin que el usuario interactúe con ellos. Investiga las causas de los cambios de diseño, como la adición o eliminación de elementos o el cambio de fuentes a medida que se carga la página.CLSSin puntuar
+Elemento
+Puntuación del cambio de diseño
+Total
+0,011
+Transformamos la piedra en Elegancia Eterna
+<h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
+0,011
 Desglose de LCP
 Cada subparte tiene estrategias de mejora específicas. Lo ideal es que la mayor parte del tiempo de LCP se dedique a cargar los recursos, no a los retrasos.LCPSin puntuar
 Subparte
@@ -143,7 +150,7 @@ Duración
 Time to First Byte
 0 ms
 Retraso de renderizado de elementos
-2480 ms
+1260 ms
 Transformamos la piedra en Elegancia Eterna
 <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
 Terceros
@@ -152,10 +159,10 @@ Tercero
 Tamaño de la transferencia
 Tiempo del hilo principal
 tailwindcss.com
-124 KiB	71 ms
+124 KiB	72 ms
 https://cdn.tailwindcss.com
 0 KiB
-71 ms
+72 ms
 /3.4.17(cdn.tailwindcss.com)
 124 KiB
 0 ms
@@ -208,10 +215,10 @@ URL
 Tamaño de la transferencia
 Ahorro estimado
 Cloudflare CDN cdn 
-14,8 KiB	14,6 KiB
+14,8 KiB	14,7 KiB
 …css/all.min.css(cdnjs.cloudflare.com)
 14,8 KiB
-14,6 KiB
+14,7 KiB
 Reduce el contenido JavaScript que no se use Ahorro estimado de 38 KiB
 Reduce el contenido JavaScript que no se use y retrasa la carga de secuencias de comandos hasta que se necesiten. Así, se reducirán los bytes consumidos por la actividad de red. Consulta cómo reducir el contenido de JavaScript que no se useLCPFCPSin puntuar
 URL
@@ -222,25 +229,28 @@ tailwindcss.com
 https://cdn.tailwindcss.com
 123,3 KiB
 37,5 KiB
-Evita tareas largas del hilo principal 2 tareas largas encontradas
+Evita tareas largas del hilo principal 3 tareas largas encontradas
 Enumera las tareas más largas del hilo principal, lo que es útil para identificar las que más contribuyen a la latencia. Consulta cómo evitar tareas largas del hilo principalTBTSin puntuar
 URL
 Hora de inicio
 Duración
 marmolesbarreto.com Propio
-243 ms
+381 ms
 https://marmolesbarreto.com
-1611 ms
-243 ms
+1614 ms
+317 ms
+https://marmolesbarreto.com
+1931 ms
+64 ms
 tailwindcss.com
-71 ms
+67 ms
 https://cdn.tailwindcss.com
-1540 ms
-71 ms
+1547 ms
+67 ms
 Consulta más información sobre el rendimiento de tu aplicación. Estos datos no afectan directamente a la puntuación del rendimiento.
-Auditorías aprobadas (18)
+Auditorías aprobadas (17)
 Mostrar
-94
+96
 Accesibilidad
 Estas comprobaciones permiten identificar oportunidades para mejorar la accesibilidad de tu aplicación web. La detección automática solo puede detectar un subconjunto de problemas y no garantiza la accesibilidad de tu aplicación web, por lo que también te recomendamos que hagas pruebas manuales.
 Contraste
@@ -265,45 +275,16 @@ SOLICITAR PRESUPUESTO MARMOLISTA
 <a href="#contacto" class="mt-8 inline-block w-fit bg-gold-accent text-white px-3 py-2 text-sm font-b…">
 CONTACTAR AHORA
 <a href="#contacto" class="mt-6 inline-block px-8 py-4 btn-gold text-white uppercase tracking-wider t…">
-Creamos texturas rugosas ideales para bordes de piscinas, platos de ducha y esc…
+div.space-y-6 > div.flex > div.ml-4 > p.text-sm
 <p class="text-sm text-gray-500">
-TECNOLOGÍA ESPECIALIZADA Restauración y Texturizado al Chorreo de Arena Pocos …
-<section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden">
-Devolvemos la vida a fachadas, columnas y ornamentos de piedra antiguos, elimin…
-<p class="text-sm text-gray-500">
-TECNOLOGÍA ESPECIALIZADA Restauración y Texturizado al Chorreo de Arena Pocos …
-<section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden">
-Logramos un efecto rústico y natural en mármoles nuevos, perfecto para casas de…
-<p class="text-sm text-gray-500">
-TECNOLOGÍA ESPECIALIZADA Restauración y Texturizado al Chorreo de Arena Pocos …
-<section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden">
-SOLICITAR EVALUACIÓN DE PIEZA
-<a href="#contacto" class="mt-8 inline-block w-fit bg-gold-accent text-white px-3 py-2 text-sm font-b…">
-PORTAFOLIO
+Trabajos de restauración y texturizado al chorreo de arena
+<section id="exclusivo" class="py-0 flex flex-col md:flex-row bg-marble-dark text-white overflow-hidden c…">
+div.container > div.flex > div > span.text-gold-accent
 <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">
-PORTAFOLIO Nuestros Trabajos COCINAS Encimeras de Diseño RESIDENCIAL Blanco…
-<section id="proyectos" class="py-20 bg-white">
-OPINIONES
+Encimera Cocina Madrid
+<section id="proyectos" class="py-20 bg-white cv-auto">
+section#testimonios > div.container > div.text-center > span.text-gold-accent
 <span class="text-gold-accent text-sm font-bold uppercase tracking-widest">
-OPINIONES Clientes de la Región de Murcia “Encimera nueva en la cocina, quedó m…
-<section id="testimonios" class="py-16 bg-white">
-© 2024 Mármoles Barreto. Todos los derechos reservados.
-<p>
-© 2024 Mármoles Barreto. Todos los derechos reservados.
-<footer class="bg-black text-gray-500 py-8 border-t border-gray-800 text-center text-sm">
+body.font-sans > section#testimonios
+<section id="testimonios" class="py-16 bg-white cv-auto">
 A continuación se indican consejos para facilitar la lectura del contenido.
-Navegación
-Los elementos de encabezado no aparecen en orden secuencial descendente
-Los títulos ordenados correctamente que no saltan niveles transmiten la estructura semántica de la página, lo que facilita la navegación y la comprensión para los usuarios que usan tecnologías asistenciales. Más información sobre el orden de los encabezados
-Elementos con errores
-Encimeras de Cocina y Baño
-<h4 class="text-xl font-bold mb-1">
-Seguridad Anti-deslizante
-<h4 class="text-xl font-bold mb-1">
-Aquí tienes consejos para facilitar el desplazamiento con el teclado en tu aplicación.
-Prácticas recomendadas
-Los enlaces idénticos tienen la misma finalidad.
-Estos elementos destacan las prácticas recomendadas de accesibilidad más habituales.
-Elementos adicionales que se deben comprobar manualmente (10)
-Mostrar
-Estos elementos se ocupan de áreas que las herramientas de prueba automáticas no pueden analizar. Consulta más información sobre cómo revisar la accesibilidad en nuestra guía.
