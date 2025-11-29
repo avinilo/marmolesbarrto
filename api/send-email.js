@@ -48,15 +48,6 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const requiredEnv = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS'];
-  const missing = requiredEnv.filter((k) => !process.env[k]);
-  if (missing.length) {
-    res.statusCode = 500;
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ error: 'Configuración SMTP incompleta' }));
-    return;
-  }
-
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT || 587),
@@ -131,6 +122,9 @@ module.exports = async (req, res) => {
   }
 
   try {
+    const requiredEnv = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS'];
+    const missing = requiredEnv.filter((k) => !process.env[k]);
+    if (missing.length) throw new Error('Configuración SMTP incompleta');
     await transporter.verify();
     await transporter.sendMail(mailOptions);
     res.statusCode = 200;
@@ -140,6 +134,6 @@ module.exports = async (req, res) => {
     console.error('SMTP send error:', err && err.message);
     res.statusCode = 500;
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ error: 'Error enviando email' }));
+    res.end(JSON.stringify({ error: 'Error enviando email', provider: 'smtp', message: String(err && err.message || '') }));
   }
 };
