@@ -467,32 +467,33 @@
                 </div>
 
                 <div class="lg:w-2/3 bg-white text-gray-800 p-8 md:p-12 rounded-sm shadow-2xl">
-                    <form onsubmit="event.preventDefault(); alert('Mensaje enviado. Gracias por contactar con Mármoles Barreto.');">
+                    <form id="contact-form">
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-2">Nombre</label>
-                                <input type="text" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su nombre">
+                                <input id="name" name="name" type="text" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su nombre">
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-2">Teléfono</label>
-                                <input type="tel" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su teléfono">
+                                <input id="phone" name="phone" type="tel" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su teléfono">
                             </div>
                         </div>
                         <div class="mb-6">
                             <label class="block text-sm font-bold text-gray-700 mb-2">Tipo de Proyecto</label>
-                            <select class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors">
+                            <select id="projectType" name="projectType" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors">
                                 <option>Encimera de Cocina</option>
                                 <option>Reforma de Baño</option>
                                 <option>Restauración / Chorreo</option>
+                                <option>Chorreo de piezas (solo texturizado)</option>
                                 <option>Arte Funerario</option>
                                 <option>Otros</option>
                             </select>
                         </div>
                         <div class="mb-8">
                             <label class="block text-sm font-bold text-gray-700 mb-2">Mensaje</label>
-                            <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Cuéntenos más sobre su idea..."></textarea>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Cuéntenos más sobre su idea..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-marble-dark text-white font-bold uppercase tracking-wider py-4 hover:bg-gold-accent transition-colors duration-300">
+                        <button id="submitBtn" type="submit" class="w-full bg-marble-dark text-white font-bold uppercase tracking-wider py-4 hover:bg-gold-accent transition-colors duración-300">
                             Enviar Solicitud
                         </button>
                     </form>
@@ -549,6 +550,40 @@
         document.querySelectorAll('.observer-target').forEach((el) => {
             observer.observe(el);
         });
+
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            const submitBtn = document.getElementById('submitBtn');
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const payload = {
+                    name: document.getElementById('name').value.trim(),
+                    phone: document.getElementById('phone').value.trim(),
+                    projectType: document.getElementById('projectType').value,
+                    message: document.getElementById('message').value.trim()
+                };
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+                try {
+                    const res = await fetch('/api/send-email', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (res.ok) {
+                        alert('Mensaje enviado. Gracias por contactar con Mármoles Barreto.');
+                        contactForm.reset();
+                    } else {
+                        alert('No se pudo enviar el mensaje. Intente más tarde.');
+                    }
+                } catch (err) {
+                    alert('Error de conexión. Intente de nuevo.');
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Solicitud';
+                }
+            });
+        }
     </script>
 </body>
 </html>
