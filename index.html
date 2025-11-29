@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://www.singularmarket.com" crossorigin>
+    <link rel="preconnect" href="https://domfesasl.com" crossorigin>
+    <link rel="preconnect" href="https://airpress.es" crossorigin>
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" fetchpriority="high">
     <meta property="og:title" content="Mármoles Barreto Murcia | Marmolista y Chorreo de Arena">
     <meta property="og:description" content="Encimeras y restauración en Murcia. Chorreo de arena: eliminar pintura/óxido, anti-deslizante, limpieza de piedra y metal.">
@@ -26,7 +29,8 @@
     <meta name="twitter:description" content="Marmolista y chorreo de arena en Murcia: encimeras, restauración y limpieza profesional.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
     <!-- Google Fonts: Playfair Display para elegancia, Lato para modernidad -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
@@ -157,7 +161,7 @@
             </div>
 
             <!-- Mobile Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-2xl text-marble-dark focus:outline-none">
+            <button id="mobile-menu-btn" aria-label="Abrir menú" class="md:hidden text-2xl text-marble-dark focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -337,7 +341,7 @@
         <div class="container mx-auto px-6 text-center">
             <h3 class="text-2xl font-serif text-marble-dark">¿Listo para empezar?</h3>
             <p class="text-gray-600 mt-2">Solicite asesoramiento sin compromiso. Respuesta rápida.</p>
-            <a href="#contacto" class="mt-6 inline-block px-8 py-4 bg-gold-accent text-white uppercase tracking-wider text-sm font-bold hover:bg-yellow-600 transition-colors">Contactar ahora</a>
+            <a href="#contacto" class="mt-6 inline-block px-8 py-4 btn-gold text-white uppercase tracking-wider text-sm font-bold transition-colors">Contactar ahora</a>
         </div>
     </section>
 
@@ -573,10 +577,10 @@
                     </div>
 
                     <div class="mt-10 flex space-x-4">
-                        <a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
+                        <a href="#" aria-label="Instagram" title="Instagram" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
+                        <a href="#" aria-label="WhatsApp" title="WhatsApp" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent transition-colors">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -586,16 +590,16 @@
                     <form id="contact-form">
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2">Nombre</label>
+                                <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Nombre</label>
                                 <input id="name" name="name" type="text" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su nombre">
                             </div>
                             <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2">Teléfono</label>
+                                <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Teléfono</label>
                                 <input id="phone" name="phone" type="tel" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su teléfono">
                             </div>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Tipo de Proyecto</label>
+                            <label for="projectType" class="block text-sm font-bold text-gray-700 mb-2">Tipo de Proyecto</label>
                             <select id="projectType" name="projectType" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors">
                                 <option>Encimera de Cocina</option>
                                 <option>Reforma de Baño</option>
@@ -606,7 +610,7 @@
                             </select>
                         </div>
                         <div class="mb-8">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Mensaje</label>
+                            <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Mensaje</label>
                             <textarea id="message" name="message" rows="4" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Cuéntenos más sobre su idea..."></textarea>
                         </div>
                         <button id="submitBtn" type="submit" class="w-full bg-marble-dark text-white font-bold uppercase tracking-wider py-4 hover:bg-gold-accent transition-colors duración-300">
