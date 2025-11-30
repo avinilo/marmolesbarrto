@@ -1,88 +1,164 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Mármoles Barreto en Murcia: encimeras, suelos y revestimientos, restauración y chorreo de arena (arenado). Eliminación de pintura y óxido, texturizado antideslizante, limpieza de piedra y metal. Presupuestos sin compromiso.">
-    <meta name="theme-color" content="#1a1a1a">
-    <meta name="format-detection" content="telephone=yes,email=yes,address=no">
-    <title>Mármoles Barreto Murcia | Marmolista y Chorreo de Arena</title>
-    <link rel="canonical" href="https://marmolesbarreto.com/">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c5a059">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://www.singularmarket.com" crossorigin>
-    <link rel="preconnect" href="https://domfesasl.com" crossorigin>
-    <link rel="preconnect" href="https://airpress.es" crossorigin>
+    <meta name="description"
+        content="Mármoles Barreto en Murcia: encimeras, suelos y revestimientos, restauración y chorreo de arena (arenado). Eliminación de pintura y óxido, texturizado antideslizante, limpieza de piedra y metal. Presupuestos sin compromiso.">
     <link rel="preload" as="image" href="/hero.webp" fetchpriority="high">
     <link rel="preload" as="image" href="/marmolista.webp">
     <link rel="preload" as="image" href="/chorreo.webp">
     <meta property="og:title" content="Mármoles Barreto Murcia | Marmolista y Chorreo de Arena">
-    <meta property="og:description" content="Encimeras y restauración en Murcia. Chorreo de arena: eliminar pintura/óxido, anti-deslizante, limpieza de piedra y metal.">
+    <meta property="og:description"
+        content="Encimeras y restauración en Murcia. Chorreo de arena: eliminar pintura/óxido, anti-deslizante, limpieza de piedra y metal.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mármoles Barreto Murcia">
-    <meta name="twitter:description" content="Marmolista y chorreo de arena en Murcia: encimeras, restauración y limpieza profesional.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
+    <meta name="twitter:description"
+        content="Marmolista y chorreo de arena en Murcia: encimeras, restauración y limpieza profesional.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
+    <link rel="preload" href="tailwind.css" as="style">
     <link href="tailwind.css" rel="stylesheet">
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-      <symbol id="icon-bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></symbol>
-      <symbol id="icon-map" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></symbol>
-      <symbol id="icon-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.03-.24c1.12.37 2.33.57 3.56.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C12.4 21.81 2.19 11.6 2.19 3a1 1 0 0 1 1-1H6.7a1 1 0 0 1 1 1c0 1.23.2 2.44.57 3.56a1 1 0 0 1-.24 1.03l-1.41 1.41z"/></symbol>
-      <symbol id="icon-envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5zm2 0l8 6 8-6H4zm16 14V8l-8 6-8-6v11h16z"/></symbol>
-      <symbol id="icon-clock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11h5v-2h-4V7h-2v6z"/></symbol>
-      <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M20.52 3.48A11.94 11.94 0 0 0 12.04 0C5.45 0 .09 5.36.09 11.96c0 2.1.56 4.16 1.62 5.97L0 24l6.22-1.63a12 12 0 0 0 5.8 1.49h.02c6.59 0 11.96-5.36 11.96-11.96 0-3.2-1.25-6.21-3.48-8.42zM12.04 22.03h-.02a10.1 10.1 0 0 1-5.16-1.42l-.37-.22-3.69.97.99-3.6-.24-.37a10.09 10.09 0 0 1-1.57-5.41C2.98 6.48 7.5 1.96 12.04 1.96c2.7 0 5.24 1.05 7.14 2.95 1.9 1.9 2.95 4.44 2.95 7.14 0 5.54-4.52 10.06-10.09 10.06zm5.77-7.54c-.32-.16-1.88-.93-2.18-1.03-.3-.11-.52-.16-.74.16-.22.32-.85 1.03-1.04 1.25-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.79-1.02-2.45-.26-.63-.53-.55-.74-.55-.19 0-.41-.03-.63-.03-.22 0-.57.08-.87.41-.3.32-1.15 1.13-1.15 2.74s1.18 3.18 1.34 3.4c.16.22 2.33 3.55 5.64 4.97.79.34 1.41.54 1.89.69.8.25 1.53.21 2.1.13.64-.1 1.88-.77 2.14-1.52.27-.75.27-1.39.19-1.54-.08-.16-.29-.24-.61-.4z"/></symbol>
-      <symbol id="icon-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6-1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></symbol>
-      <symbol id="icon-utensils" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2c.55 0 1 .45 1 1v7a3 3 0 1 1-6 0V3c0-.55.45-1 1-1s1 .45 1 1v7h2V3c0-.55.45-1 1-1zm8 0c1.66 0 3 1.34 3 3v5h-3v12h-2V10h-3V5c0-1.66 1.34-3 3-3h2z"/></symbol>
-      <symbol id="icon-layer" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l10 6-10 6-10-6 10-6zm0 8l10 6-10 6-10-6 10-6z"/></symbol>
-      <symbol id="icon-cross" viewBox="0 0 24 24"><path fill="currentColor" d="M13 3h-2v6H6v2h5v10h2V11h5V9h-5z"/></symbol>
-      <symbol id="icon-spray" viewBox="0 0 24 24"><path fill="currentColor" d="M7 3h6v2H7V3zm8 0h3v2h-3V3zM6 7h8l4 4v10H6V7zm2 2v10h8V12l-2-3H8z"/></symbol>
-      <symbol id="icon-user" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.42 0-8 2.24-8 5v3h16v-3c0-2.76-3.58-5-8-5z"/></symbol>
+        <symbol id="icon-bars" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" />
+        </symbol>
+        <symbol id="icon-map" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.03-.24c1.12.37 2.33.57 3.56.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C12.4 21.81 2.19 11.6 2.19 3a1 1 0 0 1 1-1H6.7a1 1 0 0 1 1 1c0 1.23.2 2.44.57 3.56a1 1 0 0 1-.24 1.03l-1.41 1.41z" />
+        </symbol>
+        <symbol id="icon-envelope" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5zm2 0l8 6 8-6H4zm16 14V8l-8 6-8-6v11h16z" />
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11h5v-2h-4V7h-2v6z" />
+        </symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M20.52 3.48A11.94 11.94 0 0 0 12.04 0C5.45 0 .09 5.36.09 11.96c0 2.1.56 4.16 1.62 5.97L0 24l6.22-1.63a12 12 0 0 0 5.8 1.49h.02c6.59 0 11.96-5.36 11.96-11.96 0-3.2-1.25-6.21-3.48-8.42zM12.04 22.03h-.02a10.1 10.1 0 0 1-5.16-1.42l-.37-.22-3.69.97.99-3.6-.24-.37a10.09 10.09 0 0 1-1.57-5.41C2.98 6.48 7.5 1.96 12.04 1.96c2.7 0 5.24 1.05 7.14 2.95 1.9 1.9 2.95 4.44 2.95 7.14 0 5.54-4.52 10.06-10.09 10.06zm5.77-7.54c-.32-.16-1.88-.93-2.18-1.03-.3-.11-.52-.16-.74.16-.22.32-.85 1.03-1.04 1.25-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.79-1.02-2.45-.26-.63-.53-.55-.74-.55-.19 0-.41-.03-.63-.03-.22 0-.57.08-.87.41-.3.32-1.15 1.13-1.15 2.74s1.18 3.18 1.34 3.4c.16.22 2.33 3.55 5.64 4.97.79.34 1.41.54 1.89.69.8.25 1.53.21 2.1.13.64-.1 1.88-.77 2.14-1.52.27-.75.27-1.39.19-1.54-.08-.16-.29-.24-.61-.4z" />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6-1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" />
+        </symbol>
+        <symbol id="icon-utensils" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M7 2c.55 0 1 .45 1 1v7a3 3 0 1 1-6 0V3c0-.55.45-1 1-1s1 .45 1 1v7h2V3c0-.55.45-1 1-1zm8 0c1.66 0 3 1.34 3 3v5h-3v12h-2V10h-3V5c0-1.66 1.34-3 3-3h2z" />
+        </symbol>
+        <symbol id="icon-layer" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2l10 6-10 6-10-6 10-6zm0 8l10 6-10 6-10-6 10-6z" />
+        </symbol>
+        <symbol id="icon-cross" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M13 3h-2v6H6v2h5v10h2V11h5V9h-5z" />
+        </symbol>
+        <symbol id="icon-spray" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M7 3h6v2H7V3zm8 0h3v2h-3V3zM6 7h8l4 4v10H6V7zm2 2v10h8V12l-2-3H8z" />
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.42 0-8 2.24-8 5v3h16v-3c0-2.76-3.58-5-8-5z" />
+        </symbol>
     </svg>
     <!-- Google Fonts: Playfair Display para elegancia, Lato para modernidad -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=optional" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet">
+    </noscript>
 
-    
+
     <style>
-        html { overflow-x: hidden; }
+        html {
+            overflow-x: hidden;
+        }
+
         /* Animaciones sutiles */
         .fade-in-up {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
+
         .visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .hero-overlay {
-            background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
         }
 
         /* Textura sutil de fondo */
         .bg-texture {
             background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.03" fill-rule="evenodd"/%3E%3C/svg%3E');
         }
-        .cv-auto { content-visibility: auto; contain-intrinsic-size: 800px; }
 
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .cv-auto {
+            content-visibility: auto;
+            contain-intrinsic-size: 800px;
+        }
 
-        .hero-bg { background-size: cover; background-position: center; background-image: url('/hero.webp'); }
-        @media (min-width: 768px) { .hero-bg { background-image: url('/hero.webp'); } }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
 
-        .btn-gold { background-color: #a2782d; }
-        .btn-gold:hover { background-color: #8f6b29; }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
 
-        @keyframes subtle-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
-        .wa-bounce { animation: subtle-bounce 2.5s ease-in-out infinite; will-change: transform; }
+        .hero-bg {
+            background-size: cover;
+            background-position: center;
+            background-image: url('/hero.webp');
+        }
+
+        @media (min-width: 768px) {
+            .hero-bg {
+                background-image: url('/hero.webp');
+            }
+        }
+
+        .btn-gold {
+            background-color: #a2782d;
+        }
+
+        .btn-gold:hover {
+            background-color: #8f6b29;
+        }
+
+        @keyframes subtle-bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .wa-bounce {
+            animation: subtle-bounce 2.5s ease-in-out infinite;
+            will-change: transform;
+        }
     </style>
     <script type="application/ld+json">{
       "@context":"https://schema.org",
@@ -148,6 +224,7 @@
       ]
     }</script>
 </head>
+
 <body class="font-sans text-gray-800 bg-marble-gray overflow-x-hidden">
 
     <!-- Navbar -->
@@ -156,7 +233,7 @@
             <a href="#" class="text-xl md:text-2xl font-serif font-bold tracking-widest text-marble-dark">
                 MÁRMOLES <span class="text-gold-dark">BARRETO</span>
             </a>
-            
+
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase text-gray-600">
                 <a href="#nosotros" class="hover:text-gold-dark transition-colors">La Empresa</a>
@@ -168,13 +245,17 @@
             </div>
 
             <!-- Mobile Button -->
-            <button id="mobile-menu-btn" aria-label="Abrir menú" class="md:hidden text-2xl text-marble-dark focus:outline-none">
-                <svg aria-hidden="true" class="w-6 h-6"><use href="#icon-bars"/></svg>
+            <button id="mobile-menu-btn" aria-label="Abrir menú"
+                class="md:hidden text-2xl text-marble-dark focus:outline-none">
+                <svg aria-hidden="true" class="w-6 h-6">
+                    <use href="#icon-bars" />
+                </svg>
             </button>
         </div>
-        
+
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col space-y-4 px-6 md:hidden">
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col space-y-4 px-6 md:hidden">
             <a href="#nosotros" class="text-gray-800 hover:text-gold-dark">La Empresa</a>
             <a href="#marmolista" class="text-gold-dark font-bold">Marmolista</a>
             <a href="#servicios" class="text-gray-800 hover:text-gold-dark">Servicios</a>
@@ -188,15 +269,18 @@
     <section id="inicio" class="relative h-screen flex items-center justify-center md:bg-fixed hero-bg">
         <div class="absolute inset-0 hero-overlay"></div>
         <div class="relative z-10 text-center px-6 md:px-8 max-w-4xl mx-auto">
-            <p class="text-gold-accent tracking-[0.2em] uppercase text-sm mb-4 font-bold animate-fade-in">Artesanía en Piedra desde 1998</p>
+            <p class="text-gold-accent tracking-[0.2em] uppercase text-sm mb-4 font-bold animate-fade-in">Artesanía en
+                Piedra desde 1998</p>
             <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
-                Transformamos la piedra en <br/> <span class="italic text-gray-200">Elegancia Eterna</span>
+                Transformamos la piedra en <br /> <span class="italic text-gray-200">Elegancia Eterna</span>
             </h1>
             <p class="text-gray-300 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto">
-                Especialistas en mármoles, granitos y cuarzos. Desde cocinas de vanguardia hasta restauración de patrimonio.
+                Especialistas en mármoles, granitos y cuarzos. Desde cocinas de vanguardia hasta restauración de
+                patrimonio.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#contacto" class="w-fit md:w-auto mx-auto md:mx-0 text-center px-4 py-3 btn-gold text-black uppercase tracking-wider text-sm font-bold transition-colors duration-300">
+                <a href="#contacto"
+                    class="w-fit md:w-auto mx-auto md:mx-0 text-center px-4 py-3 btn-gold text-black uppercase tracking-wider text-sm font-bold transition-colors duration-300">
                     Solicitar Presupuesto
                 </a>
             </div>
@@ -209,21 +293,31 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-16">
                 <div class="md:w-1/2 relative fade-in-up observer-target">
-                    <div class="absolute top-4 left-4 md:-top-10 md:-left-10 w-40 h-40 bg-marble-gray z-0 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <div
+                        class="absolute top-4 left-4 md:-top-10 md:-left-10 w-40 h-40 bg-marble-gray z-0 rounded-full mix-blend-multiply filter blur-2xl opacity-70">
+                    </div>
                     <!-- IMAGEN ACTUALIZADA: Chorreo con arena -->
-                    <img src="chorreo.webp" alt="Máquina de chorreo de arena" loading="lazy" decoding="async" width="1024" height="683" class="relative z-10 shadow-2xl w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-sm">
-                    <div class="absolute bottom-4 right-4 md:-bottom-10 md:-right-10 bg-gold-accent text-black p-4 md:p-8 shadow-lg z-20 rounded-sm w-11/12 sm:w-auto max-w-[calc(100%-2rem)] text-center">
+                    <img src="chorreo.webp" alt="Máquina de chorreo de arena" loading="lazy" decoding="async"
+                        width="1024" height="683"
+                        class="relative z-10 shadow-2xl w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-sm">
+                    <div
+                        class="absolute bottom-4 right-4 md:-bottom-10 md:-right-10 bg-gold-accent text-black p-4 md:p-8 shadow-lg z-20 rounded-sm w-11/12 sm:w-auto max-w-[calc(100%-2rem)] text-center">
                         <span class="block text-3xl md:text-5xl font-serif font-bold">25+</span>
-                        <span class="block text-xs md:text-sm uppercase tracking-widest mt-2">Años de<br>Experiencia</span>
+                        <span class="block text-xs md:text-sm uppercase tracking-widest mt-2">Años
+                            de<br>Experiencia</span>
                     </div>
                 </div>
                 <div class="md:w-1/2 fade-in-up observer-target" style="transition-delay: 200ms;">
                     <h2 class="text-4xl font-serif text-marble-dark mb-6">Tradición familiar y tecnología punta</h2>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        En <strong>Mármoles Barreto</strong>, fusionamos el arte tradicional del cantero con la precisión de la tecnología moderna. Llevamos más de dos décadas trabajando los materiales más nobles para clientes que buscan distinción y durabilidad.
+                        En <strong>Mármoles Barreto</strong>, fusionamos el arte tradicional del cantero con la
+                        precisión de la tecnología moderna. Llevamos más de dos décadas trabajando los materiales más
+                        nobles para clientes que buscan distinción y durabilidad.
                     </p>
                     <p class="text-gray-600 mb-8 leading-relaxed">
-                        No solo instalamos cocinas; creamos atmósferas. Desde el corte preciso hasta el acabado final con nuestra maquinaria de chorreo, controlamos cada paso del proceso para garantizar la excelencia.
+                        No solo instalamos cocinas; creamos atmósferas. Desde el corte preciso hasta el acabado final
+                        con nuestra maquinaria de chorreo, controlamos cada paso del proceso para garantizar la
+                        excelencia.
                     </p>
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-center text-gray-700">
@@ -246,33 +340,43 @@
         <div class="md:w-1/2 relative min-h-[320px] md:min-h-[500px]">
             <picture>
                 <source srcset="/marmolista.webp" type="image/webp">
-                <img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg" alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async" width="1024" height="683" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                <img src="https://www.singularmarket.com/wp-uploads/2022/06/BANDA_Townhouse2_web-24-1024x683.jpeg"
+                    alt="Trabajo marmolista: encimera y revestimiento en piedra natural" loading="lazy" decoding="async"
+                    width="1024" height="683" sizes="(max-width: 768px) 100vw, 50vw"
+                    class="absolute inset-0 w-full h-full object-cover opacity-60">
             </picture>
             <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
         </div>
         <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
             <span class="text-gold-accent font-bold tracking-widest uppercase mb-4">Maestría Marmolista</span>
             <h2 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">Diseño y Fabricación en Piedra Natural</h2>
-            <p class="text-gray-400 mb-8 text-lg">Encimeras, suelos y revestimientos con acabados de precisión. Asesoramiento en materiales (mármol, granito, cuarzo) y ejecución a medida en la Región de Murcia.</p>
+            <p class="text-gray-400 mb-8 text-lg">Encimeras, suelos y revestimientos con acabados de precisión.
+                Asesoramiento en materiales (mármol, granito, cuarzo) y ejecución a medida en la Región de Murcia.</p>
 
             <div class="space-y-6">
                 <div class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
-                        <svg aria-hidden="true" class="text-gold-accent w-5 h-5"><use href="#icon-utensils"/></svg>
+                        <svg aria-hidden="true" class="text-gold-accent w-5 h-5">
+                            <use href="#icon-utensils" />
+                        </svg>
                     </div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-1">Encimeras de Cocina y Baño</h3>
-                        <p class="text-sm text-gray-300">Corte y pulido de alto nivel, juntas ocultas y cantos personalizados. Higiene y resistencia para el día a día.</p>
+                        <p class="text-sm text-gray-300">Corte y pulido de alto nivel, juntas ocultas y cantos
+                            personalizados. Higiene y resistencia para el día a día.</p>
                     </div>
                 </div>
 
                 <div class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
-                        <svg aria-hidden="true" class="text-gold-accent w-5 h-5"><use href="#icon-layer"/></svg>
+                        <svg aria-hidden="true" class="text-gold-accent w-5 h-5">
+                            <use href="#icon-layer" />
+                        </svg>
                     </div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-1">Suelos y Revestimientos</h3>
-                        <p class="text-sm text-gray-300">Grandes formatos, escaleras y frentes decorativos. Instalación precisa y asesoramiento técnico.</p>
+                        <p class="text-sm text-gray-300">Grandes formatos, escaleras y frentes decorativos. Instalación
+                            precisa y asesoramiento técnico.</p>
                     </div>
                 </div>
 
@@ -282,12 +386,15 @@
                     </div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-1">Diseño a Medida</h3>
-                        <p class="text-sm text-gray-300">Proyectos personalizados con selección de veta, acabados y detalles artesanales que elevan cada espacio.</p>
+                        <p class="text-sm text-gray-300">Proyectos personalizados con selección de veta, acabados y
+                            detalles artesanales que elevan cada espacio.</p>
                     </div>
                 </div>
             </div>
 
-            <a href="#contacto" class="mt-8 inline-block w-fit bg-gold-accent text-black px-3 py-2 text-sm font-bold uppercase tracking-tight hover:bg-yellow-600 transition-colors">Solicitar presupuesto marmolista</a>
+            <a href="#contacto"
+                class="mt-8 inline-block w-fit bg-gold-accent text-black px-3 py-2 text-sm font-bold uppercase tracking-tight hover:bg-yellow-600 transition-colors">Solicitar
+                presupuesto marmolista</a>
         </div>
     </section>
 
@@ -301,45 +408,65 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Servicio 1 -->
-                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group">
-                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
-                        <svg aria-hidden="true" class="w-7 h-7"><use href="#icon-utensils"/></svg>
+                <div
+                    class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group">
+                    <div
+                        class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
+                        <svg aria-hidden="true" class="w-7 h-7">
+                            <use href="#icon-utensils" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-serif font-bold mb-4">Cocinas y Baños</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        Trabajamos con las mejores marcas (Silestone, Dekton, Neolith) y piedra natural para crear encimeras resistentes, higiénicas y espectaculares.
+                        Trabajamos con las mejores marcas (Silestone, Dekton, Neolith) y piedra natural para crear
+                        encimeras resistentes, higiénicas y espectaculares.
                     </p>
                 </div>
 
                 <!-- Servicio 2 -->
-                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group" style="transition-delay: 100ms;">
-                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
-                        <svg aria-hidden="true" class="w-7 h-7"><use href="#icon-layer"/></svg>
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
+                        <svg aria-hidden="true" class="w-7 h-7">
+                            <use href="#icon-layer" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-serif font-bold mb-4">Suelos y Revestimientos</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        Desde suelos de mármol de gran formato hasta escaleras voladas. Soluciones técnicas y estéticas para interiores y exteriores.
+                        Desde suelos de mármol de gran formato hasta escaleras voladas. Soluciones técnicas y estéticas
+                        para interiores y exteriores.
                     </p>
                 </div>
 
                 <!-- Servicio 3 -->
-                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group" style="transition-delay: 200ms;">
-                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
-                        <svg aria-hidden="true" class="w-7 h-7"><use href="#icon-cross"/></svg>
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group"
+                    style="transition-delay: 200ms;">
+                    <div
+                        class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
+                        <svg aria-hidden="true" class="w-7 h-7">
+                            <use href="#icon-cross" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-serif font-bold mb-4">Arte Funerario</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        Diseño y fabricación de lápidas, panteones y grabados con la máxima delicadeza y respeto. Diseños clásicos y modernos.
+                        Diseño y fabricación de lápidas, panteones y grabados con la máxima delicadeza y respeto.
+                        Diseños clásicos y modernos.
                     </p>
                 </div>
                 <!-- Servicio 4: Chorreo de Piezas -->
-                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group" style="transition-delay: 300ms;">
-                    <div class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
-                        <svg aria-hidden="true" class="w-7 h-7"><use href="#icon-spray"/></svg>
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 fade-in-up observer-target group"
+                    style="transition-delay: 300ms;">
+                    <div
+                        class="h-14 w-14 bg-marble-dark text-white flex items-center justify-center mb-6 group-hover:bg-gold-accent group-hover:text-black transition-colors">
+                        <svg aria-hidden="true" class="w-7 h-7">
+                            <use href="#icon-spray" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-serif font-bold mb-4">Chorreo de Piezas</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        Eliminación de pintura y óxido, limpieza de piedra y metal, texturizado antideslizante y preparación de superficies para pintura. Servicio especializado en Murcia.
+                        Eliminación de pintura y óxido, limpieza de piedra y metal, texturizado antideslizante y
+                        preparación de superficies para pintura. Servicio especializado en Murcia.
                     </p>
                 </div>
             </div>
@@ -352,7 +479,9 @@
         <div class="container mx-auto px-6 text-center">
             <h3 class="text-2xl font-serif text-marble-dark">¿Listo para empezar?</h3>
             <p class="text-gray-600 mt-2">Solicite asesoramiento sin compromiso. Respuesta rápida.</p>
-            <a href="#contacto" class="mt-6 inline-block px-8 py-4 btn-gold text-black uppercase tracking-wider text-sm font-bold transition-colors">Contactar ahora</a>
+            <a href="#contacto"
+                class="mt-6 inline-block px-8 py-4 btn-gold text-black uppercase tracking-wider text-sm font-bold transition-colors">Contactar
+                ahora</a>
         </div>
     </section>
 
@@ -361,17 +490,22 @@
         <div class="md:w-1/2 relative min-h-[320px] md:min-h-[500px]">
             <picture>
                 <source srcset="/chorreo.webp" type="image/webp">
-                <img src="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg" alt="Trabajos de restauración y texturizado al chorreo de arena" loading="lazy" decoding="async" width="1200" height="800" sizes="(max-width: 768px) 100vw, 50vw" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                <img src="https://airpress.es/media/wysiwyg/AirpressES/webp/Blog/ChorrearArena/seguridad-laboral-con-chorreo-de-arena.jpg"
+                    alt="Trabajos de restauración y texturizado al chorreo de arena" loading="lazy" decoding="async"
+                    width="1200" height="800" sizes="(max-width: 768px) 100vw, 50vw"
+                    class="absolute inset-0 w-full h-full object-cover opacity-60">
             </picture>
             <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
         </div>
         <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
             <span class="text-gold-accent font-bold tracking-widest uppercase mb-4">Tecnología Especializada</span>
-            <h2 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">Restauración y Texturizado al Chorreo de Arena</h2>
+            <h2 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">Restauración y Texturizado al Chorreo de
+                Arena</h2>
             <p class="text-gray-400 mb-8 text-lg">
-                Pocos talleres cuentan con nuestra capacidad de chorreo industrial. Esto nos permite ir más allá del corte y pulido estándar.
+                Pocos talleres cuentan con nuestra capacidad de chorreo industrial. Esto nos permite ir más allá del
+                corte y pulido estándar.
             </p>
-            
+
             <div class="space-y-6">
                 <div class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
@@ -379,7 +513,8 @@
                     </div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-1">Seguridad Anti-deslizante</h3>
-                        <p class="text-sm text-gray-300">Creamos texturas rugosas ideales para bordes de piscinas, platos de ducha y escaleras exteriores. Seguridad sin perder estética.</p>
+                        <p class="text-sm text-gray-300">Creamos texturas rugosas ideales para bordes de piscinas,
+                            platos de ducha y escaleras exteriores. Seguridad sin perder estética.</p>
                     </div>
                 </div>
 
@@ -389,17 +524,19 @@
                     </div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-1">Restauración de Piedra Antigua</h3>
-                        <p class="text-sm text-gray-300">Devolvemos la vida a fachadas, columnas y ornamentos de piedra antiguos, eliminando suciedad y grafitis sin dañar el material base.</p>
+                        <p class="text-sm text-gray-300">Devolvemos la vida a fachadas, columnas y ornamentos de piedra
+                            antiguos, eliminando suciedad y grafitis sin dañar el material base.</p>
                     </div>
                 </div>
-                
+
                 <div class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
                         <i class="fas fa-gem text-gold-accent"></i>
                     </div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-1">Acabados "Envejecidos"</h3>
-                        <p class="text-sm text-gray-300">Logramos un efecto rústico y natural en mármoles nuevos, perfecto para casas de campo o diseños vintage.</p>
+                        <p class="text-sm text-gray-300">Logramos un efecto rústico y natural en mármoles nuevos,
+                            perfecto para casas de campo o diseños vintage.</p>
                     </div>
                 </div>
             </div>
@@ -423,28 +560,38 @@
                     </ul>
                 </div>
             </div>
-            <a href="#contacto" class="mt-8 inline-block w-fit bg-gold-accent text-black px-3 py-2 text-sm font-bold uppercase tracking-tight hover:bg-yellow-600 transition-colors">Solicitar evaluación de pieza</a>
+            <a href="#contacto"
+                class="mt-8 inline-block w-fit bg-gold-accent text-black px-3 py-2 text-sm font-bold uppercase tracking-tight hover:bg-yellow-600 transition-colors">Solicitar
+                evaluación de pieza</a>
         </div>
     </section>
 
     <!-- Galería de Proyectos -->
     <section id="proyectos" class="py-20 bg-white cv-auto">
         <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-                    <div>
-                        <span class="text-amber-700 text-sm font-bold uppercase tracking-widest">Portafolio</span>
-                        <h2 class="text-4xl font-serif text-marble-dark mt-2">Nuestros Trabajos</h2>
-                    </div>
-                    <a href="#contacto" class="hidden md:inline-block ml-4 bg-gold-accent text-black px-4 py-2 text-sm font-bold uppercase tracking-wider hover:bg-yellow-600 transition-colors mt-4 md:mt-0">Solicitar Presupuesto</a>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-amber-700 text-sm font-bold uppercase tracking-widest">Portafolio</span>
+                    <h2 class="text-4xl font-serif text-marble-dark mt-2">Nuestros Trabajos</h2>
                 </div>
+                <a href="#contacto"
+                    class="hidden md:inline-block ml-4 bg-gold-accent text-black px-4 py-2 text-sm font-bold uppercase tracking-wider hover:bg-yellow-600 transition-colors mt-4 md:mt-0">Solicitar
+                    Presupuesto</a>
+            </div>
 
             <!-- Grid Galería Actualizado con las imágenes del usuario -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
+
                 <!-- Imagen 1: Encimeras Cocina Madrid (Principal) -->
-                <div class="group relative overflow-hidden h-64 md:h-80 lg:col-span-2 cursor-pointer fade-in-up observer-target">
-                    <img src="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg" alt="Encimera Cocina Madrid" loading="lazy" decoding="async" width="1200" height="800" srcset="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg 1200w, https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div
+                    class="group relative overflow-hidden h-64 md:h-80 lg:col-span-2 cursor-pointer fade-in-up observer-target">
+                    <img src="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg"
+                        alt="Encimera Cocina Madrid" loading="lazy" decoding="async" width="1200" height="800"
+                        srcset="https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg 1200w, https://www.marmolescuesta.es/wp-content/uploads/2023/01/encimeras-cocina-madrid.jpg 800w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Cocinas</p>
                             <h3 class="text-white text-xl font-serif">Encimeras de Diseño</h3>
@@ -453,9 +600,15 @@
                 </div>
 
                 <!-- Imagen 2: Cocina Blanca -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 100ms;">
-                    <img src="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg" alt="Cocina Blanca Mármol" loading="lazy" decoding="async" width="1024" height="683" srcset="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg 1024w, https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg 640w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 100ms;">
+                    <img src="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg"
+                        alt="Cocina Blanca Mármol" loading="lazy" decoding="async" width="1024" height="683"
+                        srcset="https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg 1024w, https://fondoterra.es/wp-content/uploads/2020/06/cocina-blanca-encimera-marmol-2-1.jpg 640w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Residencial</p>
                             <h3 class="text-white text-xl font-serif">Blancos Puros</h3>
@@ -464,9 +617,15 @@
                 </div>
 
                 <!-- Imagen 3: Detalle Encimera -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 150ms;">
-                    <img src="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg" alt="Detalle Encimera" loading="lazy" decoding="async" width="1280" height="720" srcset="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg 1280w, https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 150ms;">
+                    <img src="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg"
+                        alt="Detalle Encimera" loading="lazy" decoding="async" width="1280" height="720"
+                        srcset="https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg 1280w, https://molinacaballero.com/wp-content/uploads/2017/11/Encimeras-marmol-1280x720.jpg 800w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Materiales</p>
                             <h3 class="text-white text-xl font-serif">Acabados Perfectos</h3>
@@ -475,9 +634,15 @@
                 </div>
 
                 <!-- Imagen 4: Cocina Negra -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 200ms;">
-                    <img src="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg" alt="Cocina Negra" loading="lazy" decoding="async" width="1024" height="683" srcset="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg 1024w, https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg 640w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 200ms;">
+                    <img src="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg"
+                        alt="Cocina Negra" loading="lazy" decoding="async" width="1024" height="683"
+                        srcset="https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg 1024w, https://www.marmoleshorta.com/wp-content/themes/balou/cache/94/expo-cocina-negro-4-943c03bb.jpeg 640w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Tendencias</p>
                             <h3 class="text-white text-xl font-serif">Elegancia en Negro</h3>
@@ -486,9 +651,15 @@
                 </div>
 
                 <!-- Imagen 5: Granito/Mármol detalle -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 250ms;">
-                    <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480" alt="Detalle Granito" loading="lazy" decoding="async" width="640" height="480" srcset="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480 640w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 250ms;">
+                    <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480"
+                        alt="Detalle Granito" loading="lazy" decoding="async" width="640" height="480"
+                        srcset="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/47744a02-4d38-495c-bb76-7e9ea269d405?rule=detail_640x480 640w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Piedra Natural</p>
                             <h3 class="text-white text-xl font-serif">Granitos Exclusivos</h3>
@@ -497,9 +668,13 @@
                 </div>
 
                 <!-- Imagen 6: Expertos en Taller -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 300ms;">
-                    <img src="https://marmolistasengranada.com/wp-content/uploads/2024/02/expertos-marmolistas-en-granada.jpg" alt="Taller Marmolistas" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 300ms;">
+                    <img src="https://marmolistasengranada.com/wp-content/uploads/2024/02/expertos-marmolistas-en-granada.jpg"
+                        alt="Taller Marmolistas" loading="lazy" decoding="async"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">El Taller</p>
                             <h3 class="text-white text-xl font-serif">Maestros Artesanos</h3>
@@ -508,9 +683,15 @@
                 </div>
 
                 <!-- Nueva Imagen 1: Baño Lujo (Para cuadrar columnas) -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 350ms;">
-                    <img src="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg" alt="Baño Mármol Lujo" loading="lazy" decoding="async" width="1024" height="683" srcset="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg 1024w, https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg 640w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 350ms;">
+                    <img src="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg"
+                        alt="Baño Mármol Lujo" loading="lazy" decoding="async" width="1024" height="683"
+                        srcset="https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg 1024w, https://marmoleseverstone.com.mx/wp-content/uploads/2024/02/banos-de-marmol-de-lujo-1.jpeg 640w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-gold-accent text-xs font-bold uppercase">Baños</p>
                             <h3 class="text-white text-xl font-serif">Baños de Lujo</h3>
@@ -519,9 +700,15 @@
                 </div>
 
                 <!-- Nueva Imagen 2: Pureza en Blanco (Para cuadrar columnas) -->
-                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target" style="transition-delay: 400ms;">
-                    <img src="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg" alt="Baño Mármol Blanco" loading="lazy" decoding="async" width="1024" height="683" srcset="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg 1024w, https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg 640w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-64 md:h-80 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 400ms;">
+                    <img src="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg"
+                        alt="Baño Mármol Blanco" loading="lazy" decoding="async" width="1024" height="683"
+                        srcset="https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg 1024w, https://www.stonecross.es/wp-content/uploads/2018/08/bathroom-white-marble.jpg 640w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-amber-200 text-xs font-bold uppercase">Diseño</p>
                             <h3 class="text-white text-xl font-serif">Pureza en Blanco</h3>
@@ -530,9 +717,16 @@
                 </div>
 
                 <!-- Imagen 7: Arte Funerario (Actualizada con Mausoleo de Lujo) -->
-                <div class="group relative overflow-hidden h-80 lg:col-span-3 cursor-pointer fade-in-up observer-target" style="transition-delay: 450ms;">
-                    <img src="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg" alt="Mausoleo de lujo en mármol" loading="lazy" decoding="async" width="1200" height="800" srcset="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg 1200w, https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" style="object-position: center 60%;">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                <div class="group relative overflow-hidden h-80 lg:col-span-3 cursor-pointer fade-in-up observer-target"
+                    style="transition-delay: 450ms;">
+                    <img src="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg"
+                        alt="Mausoleo de lujo en mármol" loading="lazy" decoding="async" width="1200" height="800"
+                        srcset="https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg 1200w, https://www.marmoleriavalladares.com/upload/ambientes/17_Mausoleo_de_lujo.jpg 800w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        style="object-position: center 60%;">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                         <div>
                             <p class="text-amber-200 text-xs font-bold uppercase">Arte Funerario</p>
                             <h3 class="text-white text-xl font-serif">Lápidas y Panteones</h3>
@@ -556,45 +750,75 @@
                     <div class="flex gap-6">
                         <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
                             <div class="h-full bg-stone-50 p-6 rounded-sm shadow flex flex-col justify-between">
-                                <div class="text-stone-500 text-sm mb-4">“Encimera nueva en la cocina, quedó muy bien. Tardaron poco.”</div>
+                                <div class="text-stone-500 text-sm mb-4">“Encimera nueva en la cocina, quedó muy bien.
+                                    Tardaron poco.”</div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><svg aria-hidden="true" class="w-5 h-5"><use href="#icon-user"/></svg></div>
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center">
+                                        <svg aria-hidden="true" class="w-5 h-5">
+                                            <use href="#icon-user" />
+                                        </svg>
+                                    </div>
                                     <div class="text-sm text-stone-700">Carmen</div>
                                 </div>
                             </div>
                         </div>
                         <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
                             <div class="h-full bg-stone-50 p-6 rounded-sm shadow flex flex-col justify-between">
-                                <div class="text-stone-500 text-sm mb-4">“Me arreglaron una lápida antigua, se nota el cuidado. Bien de precio.”</div>
+                                <div class="text-stone-500 text-sm mb-4">“Me arreglaron una lápida antigua, se nota el
+                                    cuidado. Bien de precio.”</div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><svg aria-hidden="true" class="w-5 h-5"><use href="#icon-user"/></svg></div>
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center">
+                                        <svg aria-hidden="true" class="w-5 h-5">
+                                            <use href="#icon-user" />
+                                        </svg>
+                                    </div>
                                     <div class="text-sm text-stone-700">Pedro</div>
                                 </div>
                             </div>
                         </div>
                         <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
                             <div class="h-full bg-stone-50 p-6 rounded-sm shadow flex flex-col justify-between">
-                                <div class="text-stone-500 text-sm mb-4">“Chorreo para quitar pintura de una moto. Quedó lista para pintar.”</div>
+                                <div class="text-stone-500 text-sm mb-4">“Chorreo para quitar pintura de una moto. Quedó
+                                    lista para pintar.”</div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><svg aria-hidden="true" class="w-5 h-5"><use href="#icon-user"/></svg></div>
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center">
+                                        <svg aria-hidden="true" class="w-5 h-5">
+                                            <use href="#icon-user" />
+                                        </svg>
+                                    </div>
                                     <div class="text-sm text-stone-700">Lola</div>
                                 </div>
                             </div>
                         </div>
                         <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
                             <div class="h-full bg-stone-50 p-6 rounded-sm shadow flex flex-col justify-between">
-                                <div class="text-stone-500 text-sm mb-4">“Pusieron suelo de mármol en el salón. Limpio y sin sorpresas.”</div>
+                                <div class="text-stone-500 text-sm mb-4">“Pusieron suelo de mármol en el salón. Limpio y
+                                    sin sorpresas.”</div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><svg aria-hidden="true" class="w-5 h-5"><use href="#icon-user"/></svg></div>
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center">
+                                        <svg aria-hidden="true" class="w-5 h-5">
+                                            <use href="#icon-user" />
+                                        </svg>
+                                    </div>
                                     <div class="text-sm text-stone-700">Juan</div>
                                 </div>
                             </div>
                         </div>
                         <div class="snap-start basis-full md:basis-1/2 lg:basis-1/3">
                             <div class="h-full bg-stone-50 p-6 rounded-sm shadow flex flex-col justify-between">
-                                <div class="text-stone-500 text-sm mb-4">“Plato de ducha antideslizante con chorreo, se nota el agarre.”</div>
+                                <div class="text-stone-500 text-sm mb-4">“Plato de ducha antideslizante con chorreo, se
+                                    nota el agarre.”</div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center"><svg aria-hidden="true" class="w-5 h-5"><use href="#icon-user"/></svg></div>
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gold-accent text-black flex items-center justify-center">
+                                        <svg aria-hidden="true" class="w-5 h-5">
+                                            <use href="#icon-user" />
+                                        </svg>
+                                    </div>
                                     <div class="text-sm text-stone-700">Marta</div>
                                 </div>
                             </div>
@@ -609,7 +833,8 @@
     <section class="py-12 bg-gray-50 border-t border-gray-200 cv-auto">
         <div class="container mx-auto px-6 text-center">
             <p class="text-gray-700 text-sm uppercase tracking-widest mb-8">Trabajamos con las mejores marcas</p>
-            <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                 <!-- Logos simulados con texto por simplicidad -->
                 <span class="text-2xl font-bold font-serif text-gray-700">COSENTINO</span>
                 <span class="text-2xl font-bold font-serif text-gray-700">DEKTON</span>
@@ -627,36 +852,54 @@
                 <div class="lg:w-1/3">
                     <h2 class="text-4xl font-serif mb-6">Hablemos de su proyecto</h2>
                     <p class="text-gray-400 mb-8 leading-relaxed">
-                        Visite nuestro taller o envíenos un mensaje. Asesoramos sin compromiso para encontrar la piedra perfecta para su hogar.
+                        Visite nuestro taller o envíenos un mensaje. Asesoramos sin compromiso para encontrar la piedra
+                        perfecta para su hogar.
                     </p>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-center">
-                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8"><use href="#icon-map"/></svg>
-                            <a href="https://maps.app.goo.gl/LKH7VJmydbacn4TWA" target="_blank" rel="noopener" class="ml-4 text-gray-300 hover:text-white hover:underline transition-colors">
+                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8">
+                                <use href="#icon-map" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/LKH7VJmydbacn4TWA" target="_blank" rel="noopener"
+                                class="ml-4 text-gray-300 hover:text-white hover:underline transition-colors">
                                 Av. de Andalucía, 30320 Fuente Alamo, Murcia
                             </a>
                         </div>
                         <div class="flex items-center">
-                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8"><use href="#icon-phone"/></svg>
-                            <a href="tel:+34623593033" class="ml-4 text-gray-300 hover:text-white transition-colors">623 59 30 33</a>
+                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8">
+                                <use href="#icon-phone" />
+                            </svg>
+                            <a href="tel:+34623593033" class="ml-4 text-gray-300 hover:text-white transition-colors">623
+                                59 30 33</a>
                         </div>
                         <div class="flex items-center">
-                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8"><use href="#icon-envelope"/></svg>
-                            <a href="mailto:josefranciscobarretolopez@gmail.com" class="ml-4 text-gray-300 hover:text-white transition-colors break-all">josefranciscobarretolopez@gmail.com</a>
+                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8">
+                                <use href="#icon-envelope" />
+                            </svg>
+                            <a href="mailto:josefranciscobarretolopez@gmail.com"
+                                class="ml-4 text-gray-300 hover:text-white transition-colors break-all">josefranciscobarretolopez@gmail.com</a>
                         </div>
                         <div class="flex items-center">
-                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8"><use href="#icon-clock"/></svg>
+                            <svg aria-hidden="true" class="text-gold-accent w-8 h-8">
+                                <use href="#icon-clock" />
+                            </svg>
                             <span class="ml-4 text-gray-300">Lun - Vie: 08:00 - 18:00</span>
                         </div>
                     </div>
 
                     <div class="mt-10 flex space-x-4">
-                        <a href="#" aria-label="Instagram" title="Instagram" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent hover:text-black transition-colors">
-                            <svg aria-hidden="true" class="w-5 h-5"><use href="#icon-instagram"/></svg>
+                        <a href="#" aria-label="Instagram" title="Instagram"
+                            class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent hover:text-black transition-colors">
+                            <svg aria-hidden="true" class="w-5 h-5">
+                                <use href="#icon-instagram" />
+                            </svg>
                         </a>
-                        <a href="https://wa.me/34623593033" aria-label="WhatsApp" title="WhatsApp" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent hover:text-black transition-colors">
-                            <svg aria-hidden="true" class="w-5 h-5"><use href="#icon-whatsapp"/></svg>
+                        <a href="https://wa.me/34623593033" aria-label="WhatsApp" title="WhatsApp"
+                            class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-gold-accent hover:border-gold-accent hover:text-black transition-colors">
+                            <svg aria-hidden="true" class="w-5 h-5">
+                                <use href="#icon-whatsapp" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -666,16 +909,22 @@
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Nombre</label>
-                                <input id="name" name="name" type="text" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su nombre">
+                                <input id="name" name="name" type="text" required
+                                    class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors"
+                                    placeholder="Su nombre">
                             </div>
                             <div>
                                 <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Teléfono</label>
-                                <input id="phone" name="phone" type="tel" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Su teléfono">
+                                <input id="phone" name="phone" type="tel" required
+                                    class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors"
+                                    placeholder="Su teléfono">
                             </div>
                         </div>
                         <div class="mb-6">
-                            <label for="projectType" class="block text-sm font-bold text-gray-700 mb-2">Tipo de Proyecto</label>
-                            <select id="projectType" name="projectType" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors">
+                            <label for="projectType" class="block text-sm font-bold text-gray-700 mb-2">Tipo de
+                                Proyecto</label>
+                            <select id="projectType" name="projectType" required
+                                class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors">
                                 <option>Encimera de Cocina</option>
                                 <option>Reforma de Baño</option>
                                 <option>Restauración / Chorreo</option>
@@ -686,9 +935,12 @@
                         </div>
                         <div class="mb-8">
                             <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors" placeholder="Cuéntenos más sobre su idea..."></textarea>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full bg-gray-50 border border-gray-200 p-4 focus:outline-none focus:border-gold-accent transition-colors"
+                                placeholder="Cuéntenos más sobre su idea..."></textarea>
                         </div>
-                        <button id="submitBtn" type="submit" class="w-full bg-marble-dark text-white font-bold uppercase tracking-wider py-4 hover:bg-gold-accent transition-colors duración-300">
+                        <button id="submitBtn" type="submit"
+                            class="w-full bg-marble-dark text-white font-bold uppercase tracking-wider py-4 hover:bg-gold-accent transition-colors duración-300">
                             Enviar Solicitud
                         </button>
                     </form>
@@ -802,8 +1054,12 @@
         }
     </script>
 
-    <a href="https://wa.me/34623593033" target="_blank" rel="noopener" aria-label="WhatsApp" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 w-14 h-14 rounded-full bg-gold-accent text-black flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 transition z-50 wa-bounce">
-        <svg aria-hidden="true" class="w-7 h-7"><use href="#icon-whatsapp"/></svg>
+    <a href="https://wa.me/34623593033" target="_blank" rel="noopener" aria-label="WhatsApp"
+        class="fixed bottom-4 right-4 md:bottom-6 md:right-6 w-14 h-14 rounded-full bg-gold-accent text-black flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 transition z-50 wa-bounce">
+        <svg aria-hidden="true" class="w-7 h-7">
+            <use href="#icon-whatsapp" />
+        </svg>
     </a>
 </body>
+
 </html>
